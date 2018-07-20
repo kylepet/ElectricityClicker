@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ATDPFinalProject.iml" filepath="$PROJECT_DIR$/ATDPFinalProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ElectricityClicker.iml" filepath="$PROJECT_DIR$/ElectricityClicker.iml" />
     </modules>
   </component>
 </project>

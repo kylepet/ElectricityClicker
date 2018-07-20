@@ -1,4 +1,4 @@
-package sample;
+package elec;
 
 import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
