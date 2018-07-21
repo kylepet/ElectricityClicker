@@ -7,15 +7,13 @@ import javafx.scene.control.Label;
 public class Controller {
     public Label energyMeter;
 
-    private int clicks = 0;
+    private long mAH = 0;
 
     public void energyClick(ActionEvent actionEvent) {
-        clicks++;
+        mAH++;
 
         energyMeter.setAlignment(Pos.CENTER);
-        energyMeter.setText(clicks + " mAH");
+        energyMeter.setText(mAH + " mAH");
     }
 
-    public static class Passive {
-    }
 }
