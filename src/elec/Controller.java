@@ -2,7 +2,6 @@ package elec;
 
 import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
-import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 
 public class Controller {
@@ -15,5 +14,8 @@ public class Controller {
 
         energyMeter.setAlignment(Pos.CENTER);
         energyMeter.setText(clicks + " mAH");
+    }
+
+    public static class Passive {
     }
 }
