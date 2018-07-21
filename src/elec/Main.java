@@ -17,7 +17,8 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 1280 , 720));
 
         //Set icon
-        primaryStage.getIcons().add( new Image(Main.class.getResourceAsStream( "icon.png" )));
+        primaryStage.getIcons().add( new Image(
+                Ma.class.getResourceAsStream( "icon.png" )));
 
         primaryStage.show();
     }
