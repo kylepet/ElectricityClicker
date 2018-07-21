@@ -1,5 +1,5 @@
 package elec;
 
-public class Passive extends Items {
+public class Passive {
 
 }

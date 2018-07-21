@@ -1,4 +1,4 @@
 package elec;
 
-public class IncreaseClick extends Items {
+public class IncreaseClick {
 }
