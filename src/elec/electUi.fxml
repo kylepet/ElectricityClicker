@@ -10,16 +10,6 @@
 
 <GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elec.Controller">
    <children>
-   
-       <Button onAction="#energyClick" style="-fx-background-color: transparent;">
-         <graphic>
-            <ImageView fitHeight="669.0" fitWidth="520.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/electricity.png" />
-               </image>
-            </ImageView>
-         </graphic></Button>
-       <Label fx:id="energyMeter" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="370.0" text="0 mAH" GridPane.rowIndex="1" />
       <GridPane alignment="CENTER" GridPane.columnIndex="1">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -60,61 +50,61 @@
                 <NumberAxis prefHeight="286.0" prefWidth="28.0" side="LEFT" />
               </yAxis>
             </LineChart>
-            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" />
-            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" />
-            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.columnSpan="2" />
+            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3" />
             <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="100.0" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="100.0" text="Button" GridPane.valignment="CENTER">
+            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="100.0" text="Button" GridPane.columnIndex="1" GridPane.valignment="CENTER">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.rowIndex="1">
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.rowIndex="3">
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="3">
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="4">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
                <GridPane.margin>
                   <Insets bottom="57.0" />
                </GridPane.margin>
@@ -126,7 +116,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -138,7 +128,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -150,7 +140,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -162,7 +152,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT">
+            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="5" GridPane.halignment="RIGHT">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -174,7 +164,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -186,7 +176,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -198,7 +188,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -212,10 +202,23 @@
             </Button>
          </children>
       </GridPane>
+   
+       <Button onAction="#energyClick" prefHeight="677.0" prefWidth="0.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="669.0" fitWidth="507.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/electricity.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <GridPane.margin>
+            <Insets left="25.0" />
+         </GridPane.margin></Button>
+       <Label fx:id="energyMeter" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="370.0" text="0 mAH" GridPane.rowIndex="1" />
    </children>
    <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
+      <ColumnConstraints maxWidth="978.0" minWidth="411.0" prefWidth="573.0" />
+      <ColumnConstraints maxWidth="1143.0" minWidth="576.0" prefWidth="981.0" />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
