@@ -18,7 +18,7 @@ public class Main extends Application {
 
         //Set icon
         primaryStage.getIcons().add( new Image(
-                Ma.class.getResourceAsStream( "icon.png" )));
+                Main.class.getResourceAsStream( "icon.png" )));
 
         primaryStage.show();
     }
