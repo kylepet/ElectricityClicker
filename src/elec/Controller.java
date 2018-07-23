@@ -1,10 +1,15 @@
 package elec;
 
+import javafx.animation.AnimationTimer;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.util.Duration;
+
 import javax.swing.Timer;
 
 import javax.swing.*;
@@ -69,14 +74,40 @@ public class Controller {
 
     }
 
+    //Timer, executes once a frame
+    AnimationTimer zeroOneTim = new AnimationTimer(){
+
+        double progDelay;
+        double zeroOneProgNum = 0;
+
+        public void handle(long now){
+
+            if(progDelay % 5 == 0)
+                zeroOneProgNum += 0.01;
+
+            progDelay++;
+
+            zeroOneProg.setProgress(zeroOneProgNum);
+
+            if(zeroOneProg.getProgress() >= 1.0) {
+                zeroOneProg.setProgress(0);
+
+                updateMAH(15);
+
+                progDelay = 0;
+                zeroOneProgNum = 0;
+
+                zeroOneTim.stop();
+            }
+        }
+
+    };
+
     public void zeroOneClick(ActionEvent action){
         if(action.getSource().equals(zeroOneBut)){
-            Timer timer = new Timer(100, zeroOneTim);
+            zeroOneTim.start();
 
-            if(!timer.isRunning()) {
-                timer.start();
-                energyMeter.setText(mAH + " mAH");
-            }
+
         }
         else if(action.getSource().equals(zeroOneUpg)){
             mAH--;
@@ -84,27 +115,6 @@ public class Controller {
         }
     }
 
-    private ActionListener zeroOneTim = new ActionListener() {
-        @Override
-        public void actionPerformed(java.awt.event.ActionEvent e) {
-            zeroOneProgNum += 0.01;
-            zeroOneProg.setProgress(zeroOneProgNum);
-
-            if(zeroOneProgNum >= 1.0 ){
-                //Reset the vars
-                zeroOneProg.setProgress(0.0);
-                zeroOneProgNum = 0;
-
-                //Increase energy
-                mAH += 15;
-
-
-                //Stop the timer
-                ((Timer)e.getSource()).stop();
-
-            }
-        }
-    };
 
     public void updateMAH(long val){
         mAH += val;
