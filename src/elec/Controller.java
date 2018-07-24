@@ -74,16 +74,25 @@ public class Controller {
 
     }
 
+
+    private double zeroOneDelay = 0.001;
+
     //Timer, executes once a frame
-    AnimationTimer zeroOneTim = new AnimationTimer(){
+   private  AnimationTimer zeroOneTim = new AnimationTimer(){
 
         double progDelay;
         double zeroOneProgNum = 0;
+        boolean subtractMAH = true;
 
         public void handle(long now){
 
+            if(subtractMAH){
+                updateMAH(-5);
+                subtractMAH = false;
+            }
+
             if(progDelay % 5 == 0)
-                zeroOneProgNum += 0.01;
+                zeroOneProgNum += zeroOneDelay;
 
             progDelay++;
 
@@ -96,6 +105,7 @@ public class Controller {
 
                 progDelay = 0;
                 zeroOneProgNum = 0;
+                subtractMAH = true;
 
                 zeroOneTim.stop();
             }
@@ -103,15 +113,22 @@ public class Controller {
 
     };
 
+    //Costs 5 mAH
     public void zeroOneClick(ActionEvent action){
         if(action.getSource().equals(zeroOneBut)){
-            zeroOneTim.start();
+            if(mAH >= 5) {
+
+                zeroOneTim.start();
+            }
 
 
         }
         else if(action.getSource().equals(zeroOneUpg)){
-            mAH--;
-            energyMeter.setText(mAH + " mAH");
+
+            if(mAH >= 5) {
+                zeroOneDelay += 0.001;
+                updateMAH(-5);
+            }
         }
     }
 

@@ -67,22 +67,30 @@
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Label fx:id="zeroOneLab" prefHeight="107.0" prefWidth="96.0" text="0, 1 Name" GridPane.columnIndex="1">
+            <Label fx:id="zeroOneLab" prefHeight="107.0" prefWidth="96.0" text="Invest" GridPane.columnIndex="1">
                <padding>
                   <Insets bottom="90.0" />
                </padding>
             </Label>
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <Label alignment="TOP_CENTER" ellipsisString="Shop" prefHeight="75.0" prefWidth="100.0" text="Shop" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label alignment="TOP_CENTER" ellipsisString="Shop" prefHeight="0.0" prefWidth="100.0" text="Shop" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="TOP">
                <font>
                   <Font size="44.0" />
                </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="164.0" text="Button" GridPane.columnIndex="9" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="Button" GridPane.columnIndex="7" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="⬆ Click" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="31.0" />
+               </GridPane.margin></Button>
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Button" GridPane.columnIndex="8" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="⬆ Passive" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="44.0" />
+               </GridPane.margin></Button>
             <LineChart prefHeight="166.0" prefWidth="300.0" title="Electricity Output" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
@@ -101,11 +109,10 @@
             <ProgressBar fx:id="threeFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3" />
             <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="100.0" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-            <Button fx:id="zeroOneBut" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="0.0" prefWidth="100.0" text="Buy" GridPane.columnIndex="1" GridPane.valignment="CENTER">
+            <Button fx:id="zeroOneBut" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="0.0" prefWidth="100.0" text="5 mAH" GridPane.columnIndex="1" GridPane.valignment="CENTER">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
@@ -242,6 +249,14 @@
                </GridPane.margin>
             </Button>
             <Label text="1:00" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" ellipsisString="Assistants" text="Assistants" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <padding>
+                  <Insets left="23.0" />
+               </padding>
+            </Label>
          </children>
       </GridPane>
    
