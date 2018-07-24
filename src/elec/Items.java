@@ -10,6 +10,11 @@ public abstract class Items {
         price = 0;
     }
 
+    public Items(long p){
+        name = "";
+        price = p;
+    }
+
     public Items(String n, long p){
         name = n;
         price = p;
@@ -19,7 +24,13 @@ public abstract class Items {
     public void setName(String n){
         name = n;
     }
+
     public void setPrice(long p){
         price = p;
     }
+
+    public long getPrice(){
+        return price;
+    }
+
 }

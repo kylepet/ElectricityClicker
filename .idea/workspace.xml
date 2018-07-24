@@ -7,10 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64bce0b6-4dbc-4962-97e9-77f33b580a43" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ElectricityClicker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elec/ProgPassive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elec/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elec/IncreaseClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/IncreaseClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elec/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elec/Passive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/Passive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elec/ProgPassive.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elec/electUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/electUi.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,7 +39,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/elec/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -46,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/elec/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+            <state relative-caret-position="272">
+              <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,13 +60,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProgPassive.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/elec/ProgPassive.java">
+      <file leaf-file-name="IncreaseClick.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/elec/IncreaseClick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="186">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#139#140#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,13 +76,15 @@
       <file leaf-file-name="Items.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/elec/Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="-153">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#210#211#0" expanded="true" />
                 <element signature="e#234#235#0" expanded="true" />
                 <element signature="e#268#269#0" expanded="true" />
                 <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,12 +110,14 @@
       <find>Lab</find>
       <find>zeroOneClick</find>
       <find>controller</find>
+      <find>zeroOneSubtractMAH</find>
     </findStrings>
     <replaceStrings>
       <replace>Electricity Clicker</replace>
       <replace>But</replace>
       <replace>Progress</replace>
       <replace>Upg</replace>
+      <replace>zeroOneSubtractMAH</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -122,13 +129,13 @@
         <option value="$PROJECT_DIR$/src/clicker/Controller.java" />
         <option value="$PROJECT_DIR$/src/clicker/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/elec/IncreaseClick.java" />
-        <option value="$PROJECT_DIR$/src/elec/Passive.java" />
         <option value="$PROJECT_DIR$/electricityclicker.xml" />
         <option value="$PROJECT_DIR$/src/elec/Main.java" />
-        <option value="$PROJECT_DIR$/src/elec/Items.java" />
         <option value="$PROJECT_DIR$/src/elec/electUi.fxml" />
         <option value="$PROJECT_DIR$/src/elec/ProgPassive.java" />
+        <option value="$PROJECT_DIR$/src/elec/Passive.java" />
+        <option value="$PROJECT_DIR$/src/elec/Items.java" />
+        <option value="$PROJECT_DIR$/src/elec/IncreaseClick.java" />
         <option value="$PROJECT_DIR$/src/elec/Controller.java" />
       </list>
     </option>
@@ -302,7 +309,7 @@
       <workItem from="1532115765819" duration="843000" />
       <workItem from="1532118692174" duration="3085000" />
       <workItem from="1532148646890" duration="7848000" />
-      <workItem from="1532229822308" duration="21655000" />
+      <workItem from="1532229822308" duration="31239000" />
     </task>
     <task id="LOCAL-00001" summary="Change package name from sample to elec.">
       <created>1532062232689</created>
@@ -381,11 +388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532376011630</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added upgrade button that subtracts from mAH, rearranged shop section.">
+      <created>1532402371005</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1532402371005</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36399000" />
+    <option name="totallyTimeSpent" value="45983000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -447,11 +461,12 @@
     <MESSAGE value="Recentered some UI elements." />
     <MESSAGE value="Created and labeled the button, label, progress bars, and upgrade buttons for the ui. TIMERS ARE NOT WORKING." />
     <MESSAGE value="Animation timers work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Animation timers work." />
+    <MESSAGE value="Added upgrade button that subtracts from mAH, rearranged shop section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added upgrade button that subtracts from mAH, rearranged shop section." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -588,13 +603,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elec/images/Passive.java" />
-    <entry file="file://$PROJECT_DIR$/src/elec/Passive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/scene/image/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -603,56 +611,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/electricityclicker.xml" />
-    <entry file="file://$PROJECT_DIR$/src/elec/IncreaseClick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/elec/icon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elec/images/icon.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elec/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elec/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elec/electUi.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1432">
-          <caret line="11" column="132" selection-start-line="11" selection-start-column="132" selection-end-line="11" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elec/ProgPassive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/animation/AnimationTimer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -672,13 +635,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elec/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/elec/ProgPassive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="187">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elec/Passive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elec/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elec/IncreaseClick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elec/electUi.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4464">
+          <caret line="11" column="132" selection-start-line="11" selection-start-column="132" selection-end-line="11" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elec/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elec/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>

@@ -60,17 +60,32 @@ public class Controller {
     public Button twoFourUpg;
     public Button threeFourUpg;
 
+    //Assistant Buttons
+    public Button zeroOneAs;
+    public boolean zeroOneAsBought = false;
+
+    //Label to show price
+    public Label upgradeClickPrice;
+
     //Progress bar progress vars
     private double zeroOneProgNum;
 
+    //Upgrade click button
+    public Button upgradeClick;
+
     //Keeps track of amount of energy created
-    private long mAH = 0;
+    private long mAH = 5000;
+
+    //Keeps track of how much to add per click
+    private long clickValue = 1;
+
+    //Passive and click objects
+    IncreaseClick inClick = new IncreaseClick((long) 100);
 
 
     public void energyClick(ActionEvent action) {
-        mAH++;
+        mAH+= clickValue;
         energyMeter.setText(mAH + " mAH");
-
 
     }
 
@@ -80,38 +95,74 @@ public class Controller {
     //Timer, executes once a frame
    private  AnimationTimer zeroOneTim = new AnimationTimer(){
 
-        double progDelay;
+        double zeroOneProgDelay;
         double zeroOneProgNum = 0;
-        boolean subtractMAH = true;
+        boolean zeroOneSubtractMAH = true;
 
         public void handle(long now){
 
-            if(subtractMAH){
+            if(zeroOneSubtractMAH && !zeroOneAsBought){
+
+
                 updateMAH(-5);
-                subtractMAH = false;
+
+
+                zeroOneSubtractMAH = false;
             }
 
-            if(progDelay % 5 == 0)
+            if(zeroOneProgDelay % 5 == 0)
                 zeroOneProgNum += zeroOneDelay;
 
-            progDelay++;
+            zeroOneProgDelay++;
 
-            zeroOneProg.setProgress(zeroOneProgNum);
+            if(zeroOneProgNum >= 1.000)
+                zeroOneProg.setProgress(1);
+            else
+                zeroOneProg.setProgress(zeroOneProgNum);
 
             if(zeroOneProg.getProgress() >= 1.0) {
-                zeroOneProg.setProgress(0);
 
-                updateMAH(15);
+                //Here so that the progress bar doesn't flash
+                if(zeroOneProgNum >= 1.000 && zeroOneAsBought)
+                    zeroOneProg.setProgress(1);
+                else
+                    zeroOneProg.setProgress(0);
 
-                progDelay = 0;
+                //Done otherwise the mAH count will flicker
+                if(zeroOneAsBought)
+                    updateMAH(10);
+                else
+                    updateMAH(15);
+
+                zeroOneProgDelay = 0;
                 zeroOneProgNum = 0;
-                subtractMAH = true;
+                zeroOneSubtractMAH = true;
 
-                zeroOneTim.stop();
+                if(!zeroOneAsBought)
+                    zeroOneTim.stop();
             }
         }
 
     };
+
+   public void shopUpgClick(ActionEvent action){
+       if(action.getSource().equals(upgradeClick)){
+           if(inClick.buyUpg(mAH)){
+
+               if(inClick.getPrice() <= mAH) {
+                   clickValue++;
+
+                   updateMAH(inClick.getPrice() * -1);
+                   inClick.setPrice(inClick.getPrice() * 3);
+                   System.out.println(inClick.getPrice());
+
+                   //Set value of price label
+                   upgradeClickPrice.setText(inClick.getPrice() + " mAH");
+               }
+
+           }
+       }
+   }
 
     //Costs 5 mAH
     public void zeroOneClick(ActionEvent action){
@@ -120,16 +171,33 @@ public class Controller {
 
                 zeroOneTim.start();
             }
-
-
         }
-        else if(action.getSource().equals(zeroOneUpg)){
+        else if(action.getSource().equals(zeroOneUpg)) {
 
-            if(mAH >= 5) {
-                zeroOneDelay += 0.001;
-                updateMAH(-5);
+            if (mAH >= 5) {
+
+                if(zeroOneDelay >= 1.0)
+                        zeroOneUpg.setDisable(true);
+                    else
+                        zeroOneDelay += 0.001;
+
+
+
+                    updateMAH(-5);
             }
         }
+            else if (action.getSource().equals(zeroOneAs)){
+
+                if(mAH >= 500){
+                    zeroOneTim.start();
+                    zeroOneBut.setDisable(true);
+                    zeroOneAs.setDisable(true);
+                    zeroOneAsBought = true;
+                    updateMAH(-500);
+                }
+
+            }
+
     }
 
 

@@ -32,6 +32,46 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <padding>
+                  <Insets top="45.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="9" GridPane.rowIndex="1">
+               <padding>
+                  <Insets top="45.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="2">
+               <padding>
+                  <Insets top="45.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <padding>
+                  <Insets top="45.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="108.0" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="125.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="98.0" text="Label" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="125.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="500 mAH" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <padding>
+                  <Insets top="45.0" />
+               </padding>
+            </Label>
+            <Label fx:id="upgradeClickPrice" alignment="CENTER" prefHeight="61.0" prefWidth="268.0" text="100 mAH" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.columnSpan="3">
+               <padding>
+                  <Insets top="45.0" />
+               </padding>
+            </Label>
             <Label fx:id="oneOneLab" prefWidth="90.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="90.0" />
@@ -72,7 +112,7 @@
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button fx:id="zeroOneAs" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="25.0" prefWidth="111.0" text="Invest" GridPane.columnIndex="7" GridPane.rowIndex="1" />
             <Label alignment="TOP_CENTER" ellipsisString="Shop" prefHeight="0.0" prefWidth="100.0" text="Shop" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="TOP">
                <font>
                   <Font size="44.0" />
@@ -82,15 +122,11 @@
                </opaqueInsets>
             </Label>
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="⬆ Click" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.valignment="CENTER">
+            <Button fx:id="upgradeClick" mnemonicParsing="false" onAction="#shopUpgClick" prefHeight="25.0" prefWidth="90.0" text="⬆ Click" GridPane.columnIndex="8" GridPane.valignment="CENTER">
                <GridPane.margin>
-                  <Insets left="31.0" />
+                  <Insets />
                </GridPane.margin></Button>
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="⬆ Passive" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.valignment="CENTER">
-               <GridPane.margin>
-                  <Insets left="44.0" />
-               </GridPane.margin></Button>
             <LineChart prefHeight="166.0" prefWidth="300.0" title="Electricity Output" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
@@ -248,13 +284,17 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Label text="1:00" GridPane.columnIndex="1" />
             <Label alignment="CENTER" ellipsisString="Assistants" text="Assistants" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
                   <Font size="44.0" />
                </font>
                <padding>
                   <Insets left="23.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="116.0" text="Label" GridPane.columnIndex="9" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="125.0" />
                </padding>
             </Label>
          </children>
