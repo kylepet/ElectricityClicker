@@ -21,11 +21,11 @@ import javax.swing.Timer;
 import javax.swing.*;
 import java.awt.event.ActionListener;
 
-public class Controller {
+public class Controller{
     
     //Shows how much energy the player made
     public Label energyMeter;
-    
+
     //Progress bars
     public ProgressBar zeroOneProg;
     public ProgressBar oneOneProg;
@@ -35,7 +35,7 @@ public class Controller {
     public ProgressBar oneFourProg;
     public ProgressBar twoFourProg;
     public ProgressBar threeFourProg;
-    
+
     //Buttons to buy
     public Button zeroOneBut;
     public Button oneOneBut;
@@ -55,7 +55,7 @@ public class Controller {
     public Label oneFourLab;
     public Label twoFourLab;
     public Label threeFourLab;
-    
+
     //Buttons to upgrade
     public Button zeroOneUpg;
     public Button oneOneUpg;
@@ -68,7 +68,23 @@ public class Controller {
 
     //Assistant Buttons
     public Button zeroOneAs;
-    public boolean zeroOneAsBought = false;
+    public Button oneOneAs;
+    public Button twoOneAs;
+    public Button threeOneAs;
+    public Button zeroFourAs;
+    public Button oneFourAs;
+    public Button twoFourAs;
+    public Button threeFourAs;
+
+    //Booleans to check if assistant was bought
+    private boolean zeroOneAsBought = false;
+    private boolean oneOneAsBought;
+    private boolean twoOneAsBought;
+    private boolean threeOneAsBought;
+    private boolean zeroFourAsBought;
+    private boolean oneFourAsBought;
+    private boolean twoFourAsBought;
+    private boolean threeFourAsBought;
 
     //Label to show price
     public Label upgradeClickPrice;
@@ -90,7 +106,7 @@ public class Controller {
     private long clickValue = 1;
 
     //Passive and click objects
-    IncreaseClick inClick = new IncreaseClick((long) 100);
+    private IncreaseClick inClick = new IncreaseClick((long) 100);
 
 
 
@@ -193,7 +209,7 @@ public class Controller {
                                 " For the same cost, one can also upgrade the item to lower the time it takes for the bar to fill up. On the\n" +
                                 " upper-right side of the screen one can buy an upgrade to their click, which adds one energy every time you click\n" +
                                 " and so on. Lastly, underneath that, are the assistants which automatically buy the items corresponding to their \n" +
-                                " names.\n" ));
+                                " names." ));
 
         Scene dialogScene = new Scene(dialogVbox, 610, 115);
         helpScreen.setScene(dialogScene);
