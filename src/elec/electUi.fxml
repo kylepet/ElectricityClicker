@@ -148,7 +148,7 @@
                <GridPane.margin>
                   <Insets bottom="70.0" />
                </GridPane.margin></Button>
-            <LineChart prefHeight="166.0" prefWidth="300.0" title="Electricity Output" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER">
+            <LineChart prefHeight="166.0" prefWidth="300.0" title="Electricity Output" GridPane.columnIndex="6" GridPane.columnSpan="5" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
               </xAxis>
@@ -327,7 +327,7 @@
                   <Insets bottom="125.0" />
                </padding>
             </Label>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="11" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <Button fx:id="helpBtn" alignment="CENTER" mnemonicParsing="false" onAction="#showHelpScreen" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="11" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <graphic>
                   <ImageView fitHeight="51.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>

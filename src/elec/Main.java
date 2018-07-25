@@ -1,10 +1,16 @@
 package elec;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -19,6 +25,7 @@ public class Main extends Application {
         //Set icon
         primaryStage.getIcons().add( new Image(
                 Main.class.getResourceAsStream( "icon.png" )));
+
 
         primaryStage.show();
     }
