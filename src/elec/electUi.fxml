@@ -24,6 +24,7 @@
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -32,87 +33,98 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="1">
+            <Label text="machine" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="90.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="82.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="164.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="9" GridPane.rowIndex="2">
                <padding>
                   <Insets top="45.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="9" GridPane.rowIndex="1">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="140.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="2">
                <padding>
                   <Insets top="45.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="2">
-               <padding>
-                  <Insets top="45.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="2">
-               <padding>
-                  <Insets top="45.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="108.0" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="2">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="108.0" text="Label" GridPane.columnIndex="7" GridPane.rowIndex="2">
                <padding>
                   <Insets bottom="125.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="98.0" text="Label" GridPane.columnIndex="7" GridPane.rowIndex="2">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="82.0" text="Label" GridPane.columnIndex="10" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <padding>
-                  <Insets bottom="125.0" />
+                  <Insets bottom="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="500 mAH" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="1.0" prefWidth="82.0" text="500 mAH" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <padding>
-                  <Insets top="45.0" />
+                  <Insets bottom="50.0" />
                </padding>
             </Label>
             <Label fx:id="upgradeClickPrice" alignment="CENTER" prefHeight="61.0" prefWidth="268.0" text="100 mAH" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.columnSpan="3">
                <padding>
                   <Insets top="45.0" />
                </padding>
+               <GridPane.margin>
+                  <Insets top="90.0" />
+               </GridPane.margin>
             </Label>
-            <Label fx:id="oneOneLab" prefWidth="90.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Label fx:id="oneOneLab" ellipsisString="Hamster wheel" prefWidth="90.0" text="Hamster wheel" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Label fx:id="oneFourLab" prefWidth="90.0" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <Label fx:id="oneFourLab" prefWidth="90.0" text="Solar panels" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Label fx:id="twoOneLab" prefWidth="90.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Label fx:id="twoOneLab" ellipsisString="Nuclear power" prefWidth="90.0" text="Nuclear power" GridPane.rowIndex="2">
                <padding>
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Label fx:id="zeroFourLab" prefWidth="90.0" text="Label" GridPane.columnIndex="4">
+            <Label fx:id="zeroFourLab" prefWidth="90.0" text="Hand crank" GridPane.columnIndex="3">
                <padding>
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Label fx:id="threeOneLab" prefWidth="90.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Label fx:id="threeOneLab" prefWidth="90.0" text="Star harvesting" GridPane.rowIndex="3">
                <padding>
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Label fx:id="threeFourLab" prefWidth="90.0" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="3">
+            <Label fx:id="threeFourLab" ellipsisString="Perpetual motion" prefWidth="90.0" text="Perpetual motion" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="120.0" />
+               </padding>
+            </Label>
+            <Label fx:id="twoFourLab" prefWidth="90.0" text="Nuclear fusion" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <padding>
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Label fx:id="twoFourLab" prefWidth="90.0" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <Label fx:id="zeroOneLab" prefHeight="107.0" prefWidth="96.0" text="Invest">
                <padding>
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Label fx:id="zeroOneLab" prefHeight="107.0" prefWidth="96.0" text="Invest" GridPane.columnIndex="1">
-               <padding>
-                  <Insets bottom="90.0" />
-               </padding>
-            </Label>
-            <Button fx:id="zeroOneAs" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="25.0" prefWidth="111.0" text="Invest" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button fx:id="zeroOneAs" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="25.0" prefWidth="79.0" text="Invest" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+               <GridPane.margin>
+                  <Insets bottom="70.0" />
+               </GridPane.margin></Button>
             <Label alignment="TOP_CENTER" ellipsisString="Shop" prefHeight="0.0" prefWidth="100.0" text="Shop" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="TOP">
                <font>
                   <Font size="44.0" />
@@ -120,14 +132,23 @@
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Button ellipsisString="Hamser wheel" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="Hamser wheel" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+               <GridPane.margin>
+                  <Insets bottom="70.0" />
+               </GridPane.margin></Button>
             <Button fx:id="upgradeClick" mnemonicParsing="false" onAction="#shopUpgClick" prefHeight="25.0" prefWidth="90.0" text="⬆ Click" GridPane.columnIndex="8" GridPane.valignment="CENTER">
                <GridPane.margin>
-                  <Insets />
+                  <Insets top="90.0" />
                </GridPane.margin></Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <LineChart prefHeight="166.0" prefWidth="300.0" title="Electricity Output" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER">
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Hand crank" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+               <GridPane.margin>
+                  <Insets bottom="70.0" />
+               </GridPane.margin></Button>
+            <LineChart prefHeight="166.0" prefWidth="300.0" title="Electricity Output" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
               </xAxis>
@@ -135,60 +156,66 @@
                 <NumberAxis prefHeight="286.0" prefWidth="28.0" side="LEFT" />
               </yAxis>
             </LineChart>
-            <ProgressBar fx:id="zeroOneProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.columnSpan="2" />
-            <ProgressBar fx:id="oneOneProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-            <ProgressBar fx:id="twoOneProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-            <ProgressBar fx:id="threeOneProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-            <ProgressBar fx:id="zeroFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.columnSpan="2" />
-            <ProgressBar fx:id="oneFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-            <ProgressBar fx:id="twoFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-            <ProgressBar fx:id="threeFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="100.0" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-            <Button fx:id="zeroOneBut" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="0.0" prefWidth="100.0" text="5 mAH" GridPane.columnIndex="1" GridPane.valignment="CENTER">
+            <ProgressBar fx:id="zeroOneProg" prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" />
+            <ProgressBar fx:id="oneOneProg" prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <ProgressBar fx:id="twoOneProg" prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <ProgressBar fx:id="threeOneProg" prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <ProgressBar fx:id="zeroFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" />
+            <ProgressBar fx:id="oneFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <ProgressBar fx:id="twoFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <ProgressBar fx:id="threeFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Button ellipsisString="Star harvesting" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Star harvesting" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Perpetual motion machine" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button ellipsisString="Solar panels" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Solar panels" GridPane.columnIndex="10" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="70.0" />
+               </GridPane.margin></Button>
+            <Button ellipsisString="Nuclear power" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Nuclear power" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+            <Button ellipsisString="Nuclear fusion" mnemonicParsing="false" prefHeight="25.0" prefWidth="156.0" text="Nuclear fusion" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button fx:id="zeroOneBut" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="0.0" prefWidth="100.0" text="5 mAH" GridPane.valignment="CENTER">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="oneOneBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="oneOneBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="twoOneBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="twoOneBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="threeOneBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button fx:id="threeOneBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="zeroFourBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="4">
+            <Button fx:id="zeroFourBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="oneFourBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <Button fx:id="oneFourBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="twoFourBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <Button fx:id="twoFourBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="threeFourBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="4" GridPane.rowIndex="3">
+            <Button fx:id="threeFourBut" mnemonicParsing="false" prefWidth="100.0" text="Buy" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="zeroOneUpg" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+            <Button fx:id="zeroOneUpg" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
                <GridPane.margin>
                   <Insets bottom="57.0" />
                </GridPane.margin>
@@ -200,7 +227,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="oneOneUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <Button fx:id="oneOneUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -212,7 +239,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="twoOneUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <Button fx:id="twoOneUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -224,7 +251,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="threeOneUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <Button fx:id="threeOneUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -236,7 +263,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="zeroFourUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="5" GridPane.halignment="RIGHT">
+            <Button fx:id="zeroFourUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -248,7 +275,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="oneFourUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <Button fx:id="oneFourUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -260,7 +287,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="twoFourUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <Button fx:id="twoFourUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -272,7 +299,7 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="threeFourUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <Button fx:id="threeFourUpg" mnemonicParsing="false" prefHeight="0.0" prefWidth="27.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                <graphic>
                   <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -284,12 +311,15 @@
                   <Insets bottom="57.0" />
                </GridPane.margin>
             </Button>
-            <Label alignment="CENTER" ellipsisString="Assistants" text="Assistants" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Label alignment="CENTER" ellipsisString="Assistants" prefHeight="65.0" prefWidth="266.0" text="Assistants" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
                   <Font size="44.0" />
                </font>
+               <GridPane.margin>
+                  <Insets bottom="150.0" />
+               </GridPane.margin>
                <padding>
-                  <Insets left="23.0" />
+                  <Insets left="30.0" />
                </padding>
             </Label>
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="116.0" text="Label" GridPane.columnIndex="9" GridPane.rowIndex="2">
@@ -297,7 +327,7 @@
                   <Insets bottom="125.0" />
                </padding>
             </Label>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="10" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="11" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <graphic>
                   <ImageView fitHeight="51.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>

@@ -6,8 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64bce0b6-4dbc-4962-97e9-77f33b580a43" name="Default" comment="Added labels for prices, added button that upgrades click, added various methods to the IncreaseClick class. Added various button objects to controller, added object fro IncreaseClick class.">
+    <list default="true" id="64bce0b6-4dbc-4962-97e9-77f33b580a43" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elec/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elec/electUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/electUi.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/elec/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+            <state relative-caret-position="187">
+              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -117,13 +118,13 @@
         <option value="$PROJECT_DIR$/src/clicker/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/electricityclicker.xml" />
-        <option value="$PROJECT_DIR$/src/elec/Main.java" />
         <option value="$PROJECT_DIR$/src/elec/electUi.fxml" />
         <option value="$PROJECT_DIR$/src/elec/ProgPassive.java" />
         <option value="$PROJECT_DIR$/src/elec/Passive.java" />
         <option value="$PROJECT_DIR$/src/elec/Items.java" />
         <option value="$PROJECT_DIR$/src/elec/IncreaseClick.java" />
         <option value="$PROJECT_DIR$/src/elec/Controller.java" />
+        <option value="$PROJECT_DIR$/src/elec/Main.java" />
       </list>
     </option>
   </component>
@@ -137,8 +138,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1062" />
-    <option name="y" value="-15" />
+    <option name="x" value="807" />
+    <option name="y" value="115" />
     <option name="width" value="2090" />
     <option name="height" value="2075" />
   </component>
@@ -172,6 +173,13 @@
               <item name="ElectricityClicker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="elec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ElectricityClicker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ElectricityClicker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="elec" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,7 +305,7 @@
       <workItem from="1532118692174" duration="3085000" />
       <workItem from="1532148646890" duration="7848000" />
       <workItem from="1532229822308" duration="31882000" />
-      <workItem from="1532461789316" duration="4084000" />
+      <workItem from="1532461789316" duration="10099000" />
     </task>
     <task id="LOCAL-00001" summary="Change package name from sample to elec.">
       <created>1532062232689</created>
@@ -390,11 +398,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532412925295</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added help icon and button.">
+      <created>1532473788102</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1532473788102</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50710000" />
+    <option name="totallyTimeSpent" value="56725000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,6 +422,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32859176" />
@@ -418,18 +434,18 @@
       <window_info anchor="right" id="Maven Projects" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32859176" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32859176" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.05614267" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13606341" />
       <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.2535211" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997155" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -457,7 +473,8 @@
     <MESSAGE value="Animation timers work." />
     <MESSAGE value="Added upgrade button that subtracts from mAH, rearranged shop section." />
     <MESSAGE value="Added labels for prices, added button that upgrades click, added various methods to the IncreaseClick class. Added various button objects to controller, added object fro IncreaseClick class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added labels for prices, added button that upgrades click, added various methods to the IncreaseClick class. Added various button objects to controller, added object fro IncreaseClick class." />
+    <MESSAGE value="Added help icon and button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added help icon and button." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -707,8 +724,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elec/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+        <state relative-caret-position="187">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
         </state>
       </provider>
     </entry>

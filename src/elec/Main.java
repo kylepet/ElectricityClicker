@@ -14,7 +14,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("electUi.fxml"));
         primaryStage.setTitle("Electricity Clicker");
         primaryStage.setResizable(false);
-        primaryStage.setScene(new Scene(root, 1280 , 720));
+        primaryStage.setScene(new Scene(root, 1480 , 720));
 
         //Set icon
         primaryStage.getIcons().add( new Image(
