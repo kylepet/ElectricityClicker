@@ -324,7 +324,7 @@ public class Controller{
             if(twoOneSubtractMAH && !twoOneAsBought){
 
 
-                updateMAH(-5);
+                updateMAH(-70);
 
 
                 twoOneSubtractMAH = false;
@@ -350,9 +350,9 @@ public class Controller{
 
                 //Done otherwise the mAH count will flicker
                 if(twoOneAsBought)
-                    updateMAH(10);
+                    updateMAH(80);
                 else
-                    updateMAH(15);
+                    updateMAH(150);
 
                 twoOneProgDelay = 0;
                 twoOneProgNum = 0;
@@ -379,7 +379,7 @@ public class Controller{
             if(threeOneSubtractMAH && !threeOneAsBought){
 
 
-                updateMAH(-5);
+                updateMAH(-10000);
 
 
                 threeOneSubtractMAH = false;
@@ -405,9 +405,9 @@ public class Controller{
 
                 //Done otherwise the mAH count will flicker
                 if(threeOneAsBought)
-                    updateMAH(10);
+                    updateMAH(5000);
                 else
-                    updateMAH(15);
+                    updateMAH(15000);
 
                 threeOneProgDelay = 0;
                 threeOneProgNum = 0;
@@ -760,14 +760,14 @@ public class Controller{
     //Costs 5 mAH
     public void twoOneClick (ActionEvent action){
         if(action.getSource().equals(twoOneBut)){
-            if(mAH >= 5) {
+            if(mAH >= 70) {
 
                 twoOneTim.start();
             }
         }
         else if(action.getSource().equals(twoOneUpg)) {
 
-            if (mAH >= 5) {
+            if (mAH >= 70) {
 
                 if(twoOneDelay >= 1.0)
                     twoOneUpg.setDisable(true);
@@ -776,7 +776,7 @@ public class Controller{
 
 
 
-                updateMAH(-5);
+                updateMAH(-70);
             }
         }
         else if (action.getSource().equals(twoOneAs)){
@@ -796,14 +796,14 @@ public class Controller{
     //Costs 5 mAH
     public void threeOneClick (ActionEvent action){
         if(action.getSource().equals(threeOneBut)){
-            if(mAH >= 5) {
+            if(mAH >= 10000) {
 
                 threeOneTim.start();
             }
         }
         else if(action.getSource().equals(threeOneUpg)) {
 
-            if (mAH >= 5) {
+            if (mAH >= 10000) {
 
                 if(threeOneDelay >= 1.0)
                     threeOneUpg.setDisable(true);
@@ -812,7 +812,7 @@ public class Controller{
 
 
 
-                updateMAH(-5);
+                updateMAH(-10000);
             }
         }
         else if (action.getSource().equals(threeOneAs)){
