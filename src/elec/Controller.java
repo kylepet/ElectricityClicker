@@ -6,6 +6,8 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
@@ -96,9 +98,17 @@ public class Controller{
     //Button for help
     public Button helpBtn;
 
+    //Electricity production chart
+    public LineChart elecProd;
+
+    //Clear data in graph
+    public Button clearGraphData;
+
+    //Label to show mAH / sec
+    public Label mAHPerSec;
 
     //Keeps track of amount of energy created
-    private long mAH = 5000;
+    private long mAH = 0;
 
     //Keeps track of how much to add per click
     private long clickValue = 1;
@@ -112,7 +122,82 @@ public class Controller{
         mAH+= clickValue;
         energyMeter.setText(mAH + " mAH");
 
+        //Remove categories
+        elecProd.setCreateSymbols(false);
+
+        elecProd.setHorizontalGridLinesVisible(false);
+        elecProd.setVerticalGridLinesVisible(false);
+
+        //Start updating of chart
+        elecChartTim.start();
     }
+
+
+    XYChart.Series elecData = new XYChart.Series();
+
+    //Timer for electricity chart
+    private AnimationTimer elecChartTim = new AnimationTimer() {
+        //Data for chart
+
+
+        boolean firstRun = true;
+
+        int frame = 1;
+        long time = 0;
+
+        long average = 0;
+        int arrIndex = 0;
+
+        long mAHBefore = mAH;
+        long mAHGraph = 0;
+
+
+        @Override
+        public void handle(long now) {
+
+
+
+
+            if(frame % 60 == 0){
+
+                if(mAH != mAHBefore){
+                    mAHGraph += mAH - mAHBefore;
+                }
+
+                mAHBefore = mAH;
+
+                time++;
+                arrIndex++;
+
+                if(mAHGraph < 0)
+                    mAHGraph = 0;
+
+                mAHPerSec.setText(mAHGraph + " mAH/s");
+                elecData.getData().add(new XYChart.Data(time + "", mAHGraph));
+
+
+                mAHGraph = 0;
+
+                frame = 1;
+            }
+
+
+            if(firstRun) {
+                elecData.setName("mAH");
+
+                elecProd.getData().add(elecData);
+                firstRun = false;
+            }
+
+            frame++;
+        }
+    };
+
+    //Reset the data in the graph
+    public void clearGraphDataClick (ActionEvent actionEvent){
+        elecData.getData().clear();
+    }
+
 
 
     private double zeroOneDelay = 0.001;

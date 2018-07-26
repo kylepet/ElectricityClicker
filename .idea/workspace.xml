@@ -9,7 +9,6 @@
     <list default="true" id="64bce0b6-4dbc-4962-97e9-77f33b580a43" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elec/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elec/Passive.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elec/electUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/electUi.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,23 +47,15 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/elec/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+            <state relative-caret-position="175">
+              <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4560#4561#0" expanded="true" />
+                <element signature="e#4602#4603#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="electUi.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/elec/electUi.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="282" column="47" selection-start-line="282" selection-start-column="47" selection-end-line="282" selection-end-column="47" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -91,11 +82,14 @@
       <find>dialog</find>
       <find>public</find>
       <find>As</find>
-      <find>zeroOne</find>
       <find>zeroTwoClick</find>
       <find>help</find>
       <find>itemBuy</find>
       <find>buy</find>
+      <find>timer</find>
+      <find>zeroOne</find>
+      <find>zeroFourAs</find>
+      <find>zeroOneDelay</find>
     </findStrings>
     <replaceStrings>
       <replace>Electricity Clicker</replace>
@@ -106,6 +100,9 @@
       <replace>helpScreen</replace>
       <replace>private</replace>
       <replace>AsBought</replace>
+      <replace>twoFour</replace>
+      <replace>threeFour</replace>
+      <replace>oneOne</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -138,8 +135,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="735" />
-    <option name="y" value="50" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
     <option name="width" value="1950" />
     <option name="height" value="2075" />
   </component>
@@ -195,7 +192,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -302,7 +299,7 @@
       <workItem from="1532548699350" duration="2573000" />
       <workItem from="1532553531669" duration="2680000" />
       <workItem from="1532558595626" duration="1264000" />
-      <workItem from="1532559883295" duration="1356000" />
+      <workItem from="1532559883295" duration="10384000" />
     </task>
     <task id="LOCAL-00001" summary="Change package name from sample to elec.">
       <created>1532062232689</created>
@@ -423,11 +420,25 @@
       <option name="project" value="LOCAL" />
       <updated>1532484031317</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added timers, assistant vars, and listeners to the other 7 items.">
+      <created>1532561371000</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1532561371001</updated>
+    </task>
+    <task id="LOCAL-00019" summary="All the buttons now work.">
+      <created>1532568337794</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1532568337794</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68381000" />
+    <option name="totallyTimeSpent" value="77409000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,7 +467,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07133421" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12945838" />
       <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.2535211" />
@@ -495,7 +506,9 @@
     <MESSAGE value="Added names for buying stuff, added those names to labels, and re-ordered them." />
     <MESSAGE value="Added help screen with help info for silly people." />
     <MESSAGE value="Added icon for help screen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added icon for help screen." />
+    <MESSAGE value="Added timers, assistant vars, and listeners to the other 7 items." />
+    <MESSAGE value="All the buttons now work." />
+    <option name="LAST_COMMIT_MESSAGE" value="All the buttons now work." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -538,6 +551,8 @@
           <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4560#4561#0" expanded="true" />
+            <element signature="e#4602#4603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -573,6 +588,8 @@
           <caret line="195" column="40" lean-forward="true" selection-start-line="195" selection-start-column="40" selection-end-line="195" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4560#4561#0" expanded="true" />
+            <element signature="e#4602#4603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -590,6 +607,8 @@
           <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4560#4561#0" expanded="true" />
+            <element signature="e#4602#4603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -789,6 +808,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elec/Passive.java" />
+    <entry file="file://$PROJECT_DIR$/src/elec/electUi.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1244">
+          <caret line="282" column="47" selection-start-line="282" selection-start-column="47" selection-end-line="282" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/elec/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -796,20 +823,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elec/electUi.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="282" column="47" selection-start-line="282" selection-start-column="47" selection-end-line="282" selection-end-column="47" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/elec/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+        <state relative-caret-position="175">
+          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4560#4561#0" expanded="true" />
+            <element signature="e#4602#4603#0" expanded="true" />
           </folding>
         </state>
       </provider>

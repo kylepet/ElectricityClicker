@@ -153,7 +153,7 @@
                <GridPane.margin>
                   <Insets bottom="70.0" />
                </GridPane.margin></Button>
-            <LineChart prefHeight="166.0" prefWidth="300.0" title="Electricity Output" GridPane.columnIndex="6" GridPane.columnSpan="5" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER">
+            <LineChart fx:id="elecProd" prefHeight="166.0" prefWidth="300.0" GridPane.columnIndex="6" GridPane.columnSpan="5" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.rowSpan="2147483647" GridPane.vgrow="NEVER">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
               </xAxis>
@@ -195,12 +195,12 @@
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="threeOneBut" mnemonicParsing="false" onAction="#threeOneClick" prefWidth="100.0" text="Buy" GridPane.rowIndex="3">
+            <Button fx:id="threeOneBut" mnemonicParsing="false" onAction="#threeOneClick" prefHeight="25.0" prefWidth="85.0" text="Buy" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="zeroFourBut" mnemonicParsing="false" onAction="#zeroFourClick" prefWidth="100.0" text="Buy" GridPane.columnIndex="3">
+            <Button fx:id="zeroFourBut" mnemonicParsing="false" onAction="#zeroFourClick" prefWidth="100.0" text="1 mAH" GridPane.columnIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
@@ -339,6 +339,7 @@
                   <Insets right="6.0" top="3.0" />
                </GridPane.margin>
             </Button>
+            <Label fx:id="mAHPerSec" alignment="TOP_CENTER" prefHeight="17.0" prefWidth="316.0" text="0 mAH/s" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.valignment="TOP" />
          </children>
          <GridPane.margin>
             <Insets />
@@ -357,6 +358,11 @@
             <Insets left="25.0" />
          </GridPane.margin></Button>
        <Label fx:id="energyMeter" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="370.0" text="0 mAH" GridPane.rowIndex="1" />
+      <Button fx:id="clearGraphData" mnemonicParsing="false" onAction="#clearGraphDataClick" prefHeight="25.0" prefWidth="80.0" text="Clear data" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="220.0" />
+         </GridPane.margin>
+      </Button>
    </children>
    <columnConstraints>
       <ColumnConstraints maxWidth="978.0" minWidth="411.0" prefWidth="573.0" />
