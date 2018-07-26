@@ -141,7 +141,7 @@
                   <Insets top="50.0" />
                </GridPane.margin>
             </Label>
-            <Button ellipsisString="Hamser wheel" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="Hamser wheel" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+            <Button fx:id="oneOneAs" ellipsisString="Hamser wheel" mnemonicParsing="false" onAction="#oneOneClick" prefHeight="25.0" prefWidth="176.0" text="Hamser wheel" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
                <GridPane.margin>
                   <Insets bottom="70.0" />
                </GridPane.margin></Button>
@@ -149,7 +149,7 @@
                <GridPane.margin>
                   <Insets top="90.0" />
                </GridPane.margin></Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Hand crank" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+            <Button fx:id="zeroFourAs" mnemonicParsing="false" onAction="#zeroFourClick" prefHeight="25.0" prefWidth="79.0" text="Hand crank" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
                <GridPane.margin>
                   <Insets bottom="70.0" />
                </GridPane.margin></Button>
@@ -169,14 +169,14 @@
             <ProgressBar fx:id="oneFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="1" />
             <ProgressBar fx:id="twoFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2" />
             <ProgressBar fx:id="threeFourProg" prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-            <Button ellipsisString="Star harvesting" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Star harvesting" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Perpetual motion machine" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-            <Button ellipsisString="Solar panels" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Solar panels" GridPane.columnIndex="10" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Button fx:id="threeOneAs" ellipsisString="Star harvesting" mnemonicParsing="false" onAction="#threeOneClick" prefHeight="25.0" prefWidth="158.0" text="Star harvesting" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button fx:id="threeFourAs" alignment="CENTER" mnemonicParsing="false" onAction="#threeFourClick" prefHeight="25.0" prefWidth="158.0" text="Perpetual motion machine" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button fx:id="oneFourAs" ellipsisString="Solar panels" mnemonicParsing="false" onAction="#oneFourClick" prefHeight="25.0" prefWidth="111.0" text="Solar panels" GridPane.columnIndex="10" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets bottom="70.0" />
                </GridPane.margin></Button>
-            <Button ellipsisString="Nuclear power" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Nuclear power" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-            <Button ellipsisString="Nuclear fusion" mnemonicParsing="false" prefHeight="25.0" prefWidth="156.0" text="Nuclear fusion" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+            <Button fx:id="twoOneAs" ellipsisString="Nuclear power" mnemonicParsing="false" onAction="#twoOneClick" prefHeight="25.0" prefWidth="160.0" text="Nuclear power" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+            <Button fx:id="twoFourAs" ellipsisString="Nuclear fusion" mnemonicParsing="false" onAction="#twoFourClick" prefHeight="25.0" prefWidth="156.0" text="Nuclear fusion" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets></Button>

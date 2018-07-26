@@ -170,372 +170,386 @@ public class Controller{
 
     };
 
+   private double oneOneDelay = 0.001;
+   
     //Timer, executes once a frame
     private  AnimationTimer oneOneTim = new AnimationTimer(){
 
-        double zeroOneProgDelay;
-        double zeroOneProgNum = 0;
-        boolean zeroOneSubtractMAH = true;
+        double oneOneProgDelay;
+        double oneOneProgNum = 0;
+        boolean oneOneSubtractMAH = true;
 
         public void handle(long now){
 
-            if(zeroOneSubtractMAH && !zeroOneAsBought){
+            if(oneOneSubtractMAH && !oneOneAsBought){
 
 
                 updateMAH(-5);
 
 
-                zeroOneSubtractMAH = false;
+                oneOneSubtractMAH = false;
             }
 
-            if(zeroOneProgDelay % 5 == 0)
-                zeroOneProgNum += zeroOneDelay;
+            if(oneOneProgDelay % 5 == 0)
+                oneOneProgNum += oneOneDelay;
 
-            zeroOneProgDelay++;
+            oneOneProgDelay++;
 
-            if(zeroOneProgNum >= 1.000)
-                zeroOneProg.setProgress(1);
+            if(oneOneProgNum >= 1.000)
+                oneOneProg.setProgress(1);
             else
-                zeroOneProg.setProgress(zeroOneProgNum);
+                oneOneProg.setProgress(oneOneProgNum);
 
-            if(zeroOneProg.getProgress() >= 1.0) {
+            if(oneOneProg.getProgress() >= 1.0) {
 
                 //Here so that the progress bar doesn't flash
-                if(zeroOneProgNum >= 1.000 && zeroOneAsBought)
-                    zeroOneProg.setProgress(1);
+                if(oneOneProgNum >= 1.000 && oneOneAsBought)
+                    oneOneProg.setProgress(1);
                 else
-                    zeroOneProg.setProgress(0);
+                    oneOneProg.setProgress(0);
 
                 //Done otherwise the mAH count will flicker
-                if(zeroOneAsBought)
+                if(oneOneAsBought)
                     updateMAH(10);
                 else
                     updateMAH(15);
 
-                zeroOneProgDelay = 0;
-                zeroOneProgNum = 0;
-                zeroOneSubtractMAH = true;
+                oneOneProgDelay = 0;
+                oneOneProgNum = 0;
+                oneOneSubtractMAH = true;
 
-                if(!zeroOneAsBought)
-                    zeroOneTim.stop();
+                if(!oneOneAsBought)
+                    oneOneTim.stop();
             }
         }
 
     };
 
+    private double twoOneDelay = 0.001;
+    
     //Timer, executes once a frame
     private  AnimationTimer twoOneTim = new AnimationTimer(){
 
-        double zeroOneProgDelay;
-        double zeroOneProgNum = 0;
-        boolean zeroOneSubtractMAH = true;
+        double twoOneProgDelay;
+        double twoOneProgNum = 0;
+        boolean twoOneSubtractMAH = true;
 
         public void handle(long now){
 
-            if(zeroOneSubtractMAH && !zeroOneAsBought){
+            if(twoOneSubtractMAH && !twoOneAsBought){
 
 
                 updateMAH(-5);
 
 
-                zeroOneSubtractMAH = false;
+                twoOneSubtractMAH = false;
             }
 
-            if(zeroOneProgDelay % 5 == 0)
-                zeroOneProgNum += zeroOneDelay;
+            if(twoOneProgDelay % 5 == 0)
+                twoOneProgNum += twoOneDelay;
 
-            zeroOneProgDelay++;
+            twoOneProgDelay++;
 
-            if(zeroOneProgNum >= 1.000)
-                zeroOneProg.setProgress(1);
+            if(twoOneProgNum >= 1.000)
+                twoOneProg.setProgress(1);
             else
-                zeroOneProg.setProgress(zeroOneProgNum);
+                twoOneProg.setProgress(twoOneProgNum);
 
-            if(zeroOneProg.getProgress() >= 1.0) {
+            if(twoOneProg.getProgress() >= 1.0) {
 
                 //Here so that the progress bar doesn't flash
-                if(zeroOneProgNum >= 1.000 && zeroOneAsBought)
-                    zeroOneProg.setProgress(1);
+                if(twoOneProgNum >= 1.000 && twoOneAsBought)
+                    twoOneProg.setProgress(1);
                 else
-                    zeroOneProg.setProgress(0);
+                    twoOneProg.setProgress(0);
 
                 //Done otherwise the mAH count will flicker
-                if(zeroOneAsBought)
+                if(twoOneAsBought)
                     updateMAH(10);
                 else
                     updateMAH(15);
 
-                zeroOneProgDelay = 0;
-                zeroOneProgNum = 0;
-                zeroOneSubtractMAH = true;
+                twoOneProgDelay = 0;
+                twoOneProgNum = 0;
+                twoOneSubtractMAH = true;
 
-                if(!zeroOneAsBought)
-                    zeroOneTim.stop();
+                if(!twoOneAsBought)
+                    twoOneTim.stop();
             }
         }
 
     };
 
+    private double threeOneDelay = 0.001;
+    
     //Timer, executes once a frame
     private  AnimationTimer threeOneTim = new AnimationTimer(){
 
-        double zeroOneProgDelay;
-        double zeroOneProgNum = 0;
-        boolean zeroOneSubtractMAH = true;
+        double threeOneProgDelay;
+        double threeOneProgNum = 0;
+        boolean threeOneSubtractMAH = true;
 
         public void handle(long now){
 
-            if(zeroOneSubtractMAH && !zeroOneAsBought){
+            if(threeOneSubtractMAH && !threeOneAsBought){
 
 
                 updateMAH(-5);
 
 
-                zeroOneSubtractMAH = false;
+                threeOneSubtractMAH = false;
             }
 
-            if(zeroOneProgDelay % 5 == 0)
-                zeroOneProgNum += zeroOneDelay;
+            if(threeOneProgDelay % 5 == 0)
+                threeOneProgNum += threeOneDelay;
 
-            zeroOneProgDelay++;
+            threeOneProgDelay++;
 
-            if(zeroOneProgNum >= 1.000)
-                zeroOneProg.setProgress(1);
+            if(threeOneProgNum >= 1.000)
+                threeOneProg.setProgress(1);
             else
-                zeroOneProg.setProgress(zeroOneProgNum);
+                threeOneProg.setProgress(threeOneProgNum);
 
-            if(zeroOneProg.getProgress() >= 1.0) {
+            if(threeOneProg.getProgress() >= 1.0) {
 
                 //Here so that the progress bar doesn't flash
-                if(zeroOneProgNum >= 1.000 && zeroOneAsBought)
-                    zeroOneProg.setProgress(1);
+                if(threeOneProgNum >= 1.000 && threeOneAsBought)
+                    threeOneProg.setProgress(1);
                 else
-                    zeroOneProg.setProgress(0);
+                    threeOneProg.setProgress(0);
 
                 //Done otherwise the mAH count will flicker
-                if(zeroOneAsBought)
+                if(threeOneAsBought)
                     updateMAH(10);
                 else
                     updateMAH(15);
 
-                zeroOneProgDelay = 0;
-                zeroOneProgNum = 0;
-                zeroOneSubtractMAH = true;
+                threeOneProgDelay = 0;
+                threeOneProgNum = 0;
+                threeOneSubtractMAH = true;
 
-                if(!zeroOneAsBought)
-                    zeroOneTim.stop();
+                if(!threeOneAsBought)
+                    threeOneTim.stop();
             }
         }
 
     };
 
+    private double zeroFourDelay = 0.001;
+    
     //Timer, executes once a frame
     private  AnimationTimer zeroFourTim = new AnimationTimer(){
 
-        double zeroOneProgDelay;
-        double zeroOneProgNum = 0;
-        boolean zeroOneSubtractMAH = true;
+        double zeroFourProgDelay;
+        double zeroFourProgNum = 0;
+        boolean zeroFourSubtractMAH = true;
 
         public void handle(long now){
 
-            if(zeroOneSubtractMAH && !zeroOneAsBought){
+            if(zeroFourSubtractMAH && !zeroFourAsBought){
 
 
                 updateMAH(-5);
 
 
-                zeroOneSubtractMAH = false;
+                zeroFourSubtractMAH = false;
             }
 
-            if(zeroOneProgDelay % 5 == 0)
-                zeroOneProgNum += zeroOneDelay;
+            if(zeroFourProgDelay % 5 == 0)
+                zeroFourProgNum += zeroFourDelay;
 
-            zeroOneProgDelay++;
+            zeroFourProgDelay++;
 
-            if(zeroOneProgNum >= 1.000)
-                zeroOneProg.setProgress(1);
+            if(zeroFourProgNum >= 1.000)
+                zeroFourProg.setProgress(1);
             else
-                zeroOneProg.setProgress(zeroOneProgNum);
+                zeroFourProg.setProgress(zeroFourProgNum);
 
-            if(zeroOneProg.getProgress() >= 1.0) {
+            if(zeroFourProg.getProgress() >= 1.0) {
 
                 //Here so that the progress bar doesn't flash
-                if(zeroOneProgNum >= 1.000 && zeroOneAsBought)
-                    zeroOneProg.setProgress(1);
+                if(zeroFourProgNum >= 1.000 && zeroFourAsBought)
+                    zeroFourProg.setProgress(1);
                 else
-                    zeroOneProg.setProgress(0);
+                    zeroFourProg.setProgress(0);
 
                 //Done otherwise the mAH count will flicker
-                if(zeroOneAsBought)
+                if(zeroFourAsBought)
                     updateMAH(10);
                 else
                     updateMAH(15);
 
-                zeroOneProgDelay = 0;
-                zeroOneProgNum = 0;
-                zeroOneSubtractMAH = true;
+                zeroFourProgDelay = 0;
+                zeroFourProgNum = 0;
+                zeroFourSubtractMAH = true;
 
-                if(!zeroOneAsBought)
-                    zeroOneTim.stop();
+                if(!zeroFourAsBought)
+                    zeroFourTim.stop();
             }
         }
 
     };
+    
+    private double oneFourDelay = 0.001;
 
     //Timer, executes once a frame
     private  AnimationTimer oneFourTim = new AnimationTimer(){
 
-        double zeroOneProgDelay;
-        double zeroOneProgNum = 0;
-        boolean zeroOneSubtractMAH = true;
+        double oneFourProgDelay;
+        double oneFourProgNum = 0;
+        boolean oneFourSubtractMAH = true;
 
         public void handle(long now){
 
-            if(zeroOneSubtractMAH && !zeroOneAsBought){
+            if(oneFourSubtractMAH && !oneFourAsBought){
 
 
                 updateMAH(-5);
 
 
-                zeroOneSubtractMAH = false;
+                oneFourSubtractMAH = false;
             }
 
-            if(zeroOneProgDelay % 5 == 0)
-                zeroOneProgNum += zeroOneDelay;
+            if(oneFourProgDelay % 5 == 0)
+                oneFourProgNum += oneFourDelay;
 
-            zeroOneProgDelay++;
+            oneFourProgDelay++;
 
-            if(zeroOneProgNum >= 1.000)
-                zeroOneProg.setProgress(1);
+            if(oneFourProgNum >= 1.000)
+                oneFourProg.setProgress(1);
             else
-                zeroOneProg.setProgress(zeroOneProgNum);
+                oneFourProg.setProgress(oneFourProgNum);
 
-            if(zeroOneProg.getProgress() >= 1.0) {
+            if(oneFourProg.getProgress() >= 1.0) {
 
                 //Here so that the progress bar doesn't flash
-                if(zeroOneProgNum >= 1.000 && zeroOneAsBought)
-                    zeroOneProg.setProgress(1);
+                if(oneFourProgNum >= 1.000 && oneFourAsBought)
+                    oneFourProg.setProgress(1);
                 else
-                    zeroOneProg.setProgress(0);
+                    oneFourProg.setProgress(0);
 
                 //Done otherwise the mAH count will flicker
-                if(zeroOneAsBought)
+                if(oneFourAsBought)
                     updateMAH(10);
                 else
                     updateMAH(15);
 
-                zeroOneProgDelay = 0;
-                zeroOneProgNum = 0;
-                zeroOneSubtractMAH = true;
+                oneFourProgDelay = 0;
+                oneFourProgNum = 0;
+                oneFourSubtractMAH = true;
 
-                if(!zeroOneAsBought)
-                    zeroOneTim.stop();
+                if(!oneFourAsBought)
+                    oneFourTim.stop();
             }
         }
 
     };
 
+    private double twoFourDelay = 0.001;
+    
     //Timer, executes once a frame
     private  AnimationTimer twoFourTim = new AnimationTimer(){
 
-        double zeroOneProgDelay;
-        double zeroOneProgNum = 0;
-        boolean zeroOneSubtractMAH = true;
+        double twoFourProgDelay;
+        double twoFourProgNum = 0;
+        boolean twoFourSubtractMAH = true;
 
         public void handle(long now){
 
-            if(zeroOneSubtractMAH && !zeroOneAsBought){
+            if(twoFourSubtractMAH && !twoFourAsBought){
 
 
                 updateMAH(-5);
 
 
-                zeroOneSubtractMAH = false;
+                twoFourSubtractMAH = false;
             }
 
-            if(zeroOneProgDelay % 5 == 0)
-                zeroOneProgNum += zeroOneDelay;
+            if(twoFourProgDelay % 5 == 0)
+                twoFourProgNum += twoFourDelay;
 
-            zeroOneProgDelay++;
+            twoFourProgDelay++;
 
-            if(zeroOneProgNum >= 1.000)
-                zeroOneProg.setProgress(1);
+            if(twoFourProgNum >= 1.000)
+                twoFourProg.setProgress(1);
             else
-                zeroOneProg.setProgress(zeroOneProgNum);
+                twoFourProg.setProgress(twoFourProgNum);
 
-            if(zeroOneProg.getProgress() >= 1.0) {
+            if(twoFourProg.getProgress() >= 1.0) {
 
                 //Here so that the progress bar doesn't flash
-                if(zeroOneProgNum >= 1.000 && zeroOneAsBought)
-                    zeroOneProg.setProgress(1);
+                if(twoFourProgNum >= 1.000 && twoFourAsBought)
+                    twoFourProg.setProgress(1);
                 else
-                    zeroOneProg.setProgress(0);
+                    twoFourProg.setProgress(0);
 
                 //Done otherwise the mAH count will flicker
-                if(zeroOneAsBought)
+                if(twoFourAsBought)
                     updateMAH(10);
                 else
                     updateMAH(15);
 
-                zeroOneProgDelay = 0;
-                zeroOneProgNum = 0;
-                zeroOneSubtractMAH = true;
+                twoFourProgDelay = 0;
+                twoFourProgNum = 0;
+                twoFourSubtractMAH = true;
 
-                if(!zeroOneAsBought)
-                    zeroOneTim.stop();
+                if(!twoFourAsBought)
+                    twoFourTim.stop();
             }
         }
 
     };
+    
+    private double threeFourDelay = 0.001;
 
     //Timer, executes once a frame
     private  AnimationTimer threeFourTim = new AnimationTimer(){
 
-        double zeroOneProgDelay;
-        double zeroOneProgNum = 0;
-        boolean zeroOneSubtractMAH = true;
+        double threeFourProgDelay;
+        double threeFourProgNum = 0;
+        boolean threeFourSubtractMAH = true;
 
         public void handle(long now){
 
-            if(zeroOneSubtractMAH && !zeroOneAsBought){
+            if(threeFourSubtractMAH && !threeFourAsBought){
 
 
                 updateMAH(-5);
 
 
-                zeroOneSubtractMAH = false;
+                threeFourSubtractMAH = false;
             }
 
-            if(zeroOneProgDelay % 5 == 0)
-                zeroOneProgNum += zeroOneDelay;
+            if(threeFourProgDelay % 5 == 0)
+                threeFourProgNum += threeFourDelay;
 
-            zeroOneProgDelay++;
+            threeFourProgDelay++;
 
-            if(zeroOneProgNum >= 1.000)
-                zeroOneProg.setProgress(1);
+            if(threeFourProgNum >= 1.000)
+                threeFourProg.setProgress(1);
             else
-                zeroOneProg.setProgress(zeroOneProgNum);
+                threeFourProg.setProgress(threeFourProgNum);
 
-            if(zeroOneProg.getProgress() >= 1.0) {
+            if(threeFourProg.getProgress() >= 1.0) {
 
                 //Here so that the progress bar doesn't flash
-                if(zeroOneProgNum >= 1.000 && zeroOneAsBought)
-                    zeroOneProg.setProgress(1);
+                if(threeFourProgNum >= 1.000 && threeFourAsBought)
+                    threeFourProg.setProgress(1);
                 else
-                    zeroOneProg.setProgress(0);
+                    threeFourProg.setProgress(0);
 
                 //Done otherwise the mAH count will flicker
-                if(zeroOneAsBought)
+                if(threeFourAsBought)
                     updateMAH(10);
                 else
                     updateMAH(15);
 
-                zeroOneProgDelay = 0;
-                zeroOneProgNum = 0;
-                zeroOneSubtractMAH = true;
+                threeFourProgDelay = 0;
+                threeFourProgNum = 0;
+                threeFourSubtractMAH = true;
 
-                if(!zeroOneAsBought)
-                    zeroOneTim.stop();
+                if(!threeFourAsBought)
+                    threeFourTim.stop();
             }
         }
 
@@ -624,33 +638,33 @@ public class Controller{
 
     //Costs 5 mAH
     public void oneOneClick (ActionEvent action){
-        if(action.getSource().equals(zeroOneBut)){
+        if(action.getSource().equals(oneOneBut)){
             if(mAH >= 5) {
 
-                zeroOneTim.start();
+                oneOneTim.start();
             }
         }
-        else if(action.getSource().equals(zeroOneUpg)) {
+        else if(action.getSource().equals(oneOneUpg)) {
 
             if (mAH >= 5) {
 
-                if(zeroOneDelay >= 1.0)
-                    zeroOneUpg.setDisable(true);
+                if(oneOneDelay >= 1.0)
+                    oneOneUpg.setDisable(true);
                 else
-                    zeroOneDelay += 0.001;
+                    oneOneDelay += 0.001;
 
 
 
                 updateMAH(-5);
             }
         }
-        else if (action.getSource().equals(zeroOneAs)){
+        else if (action.getSource().equals(oneOneAs)){
 
             if(mAH >= 500){
-                zeroOneTim.start();
-                zeroOneBut.setDisable(true);
-                zeroOneAs.setDisable(true);
-                zeroOneAsBought = true;
+                oneOneTim.start();
+                oneOneBut.setDisable(true);
+                oneOneAs.setDisable(true);
+                oneOneAsBought = true;
                 updateMAH(-500);
             }
 
@@ -660,33 +674,33 @@ public class Controller{
 
     //Costs 5 mAH
     public void twoOneClick (ActionEvent action){
-        if(action.getSource().equals(zeroOneBut)){
+        if(action.getSource().equals(twoOneBut)){
             if(mAH >= 5) {
 
-                zeroOneTim.start();
+                twoOneTim.start();
             }
         }
-        else if(action.getSource().equals(zeroOneUpg)) {
+        else if(action.getSource().equals(twoOneUpg)) {
 
             if (mAH >= 5) {
 
-                if(zeroOneDelay >= 1.0)
-                    zeroOneUpg.setDisable(true);
+                if(twoOneDelay >= 1.0)
+                    twoOneUpg.setDisable(true);
                 else
-                    zeroOneDelay += 0.001;
+                    twoOneDelay += 0.001;
 
 
 
                 updateMAH(-5);
             }
         }
-        else if (action.getSource().equals(zeroOneAs)){
+        else if (action.getSource().equals(twoOneAs)){
 
             if(mAH >= 500){
-                zeroOneTim.start();
-                zeroOneBut.setDisable(true);
-                zeroOneAs.setDisable(true);
-                zeroOneAsBought = true;
+                twoOneTim.start();
+                twoOneBut.setDisable(true);
+                twoOneAs.setDisable(true);
+                twoOneAsBought = true;
                 updateMAH(-500);
             }
 
@@ -696,33 +710,33 @@ public class Controller{
 
     //Costs 5 mAH
     public void threeOneClick (ActionEvent action){
-        if(action.getSource().equals(zeroOneBut)){
+        if(action.getSource().equals(threeOneBut)){
             if(mAH >= 5) {
 
-                zeroOneTim.start();
+                threeOneTim.start();
             }
         }
-        else if(action.getSource().equals(zeroOneUpg)) {
+        else if(action.getSource().equals(threeOneUpg)) {
 
             if (mAH >= 5) {
 
-                if(zeroOneDelay >= 1.0)
-                    zeroOneUpg.setDisable(true);
+                if(threeOneDelay >= 1.0)
+                    threeOneUpg.setDisable(true);
                 else
-                    zeroOneDelay += 0.001;
+                    threeOneDelay += 0.001;
 
 
 
                 updateMAH(-5);
             }
         }
-        else if (action.getSource().equals(zeroOneAs)){
+        else if (action.getSource().equals(threeOneAs)){
 
             if(mAH >= 500){
-                zeroOneTim.start();
-                zeroOneBut.setDisable(true);
-                zeroOneAs.setDisable(true);
-                zeroOneAsBought = true;
+                threeOneTim.start();
+                threeOneBut.setDisable(true);
+                threeOneAs.setDisable(true);
+                threeOneAsBought = true;
                 updateMAH(-500);
             }
 
@@ -732,33 +746,33 @@ public class Controller{
 
     //Costs 5 mAH
     public void zeroFourClick (ActionEvent action){
-        if(action.getSource().equals(zeroOneBut)){
+        if(action.getSource().equals(zeroFourBut)){
             if(mAH >= 5) {
 
-                zeroOneTim.start();
+                zeroFourTim.start();
             }
         }
-        else if(action.getSource().equals(zeroOneUpg)) {
+        else if(action.getSource().equals(zeroFourUpg)) {
 
             if (mAH >= 5) {
 
-                if(zeroOneDelay >= 1.0)
-                    zeroOneUpg.setDisable(true);
+                if(zeroFourDelay >= 1.0)
+                    zeroFourUpg.setDisable(true);
                 else
-                    zeroOneDelay += 0.001;
+                    zeroFourDelay += 0.001;
 
 
 
                 updateMAH(-5);
             }
         }
-        else if (action.getSource().equals(zeroOneAs)){
+        else if (action.getSource().equals(zeroFourAs)){
 
             if(mAH >= 500){
-                zeroOneTim.start();
-                zeroOneBut.setDisable(true);
-                zeroOneAs.setDisable(true);
-                zeroOneAsBought = true;
+                zeroFourTim.start();
+                zeroFourBut.setDisable(true);
+                zeroFourAs.setDisable(true);
+                zeroFourAsBought = true;
                 updateMAH(-500);
             }
 
@@ -768,33 +782,33 @@ public class Controller{
 
     //Costs 5 mAH
     public void oneFourClick (ActionEvent action){
-        if(action.getSource().equals(zeroOneBut)){
+        if(action.getSource().equals(oneFourBut)){
             if(mAH >= 5) {
 
-                zeroOneTim.start();
+                oneFourTim.start();
             }
         }
-        else if(action.getSource().equals(zeroOneUpg)) {
+        else if(action.getSource().equals(oneFourUpg)) {
 
             if (mAH >= 5) {
 
-                if(zeroOneDelay >= 1.0)
-                    zeroOneUpg.setDisable(true);
+                if(oneFourDelay >= 1.0)
+                    oneFourUpg.setDisable(true);
                 else
-                    zeroOneDelay += 0.001;
+                    oneFourDelay += 0.001;
 
 
 
                 updateMAH(-5);
             }
         }
-        else if (action.getSource().equals(zeroOneAs)){
+        else if (action.getSource().equals(oneFourAs)){
 
             if(mAH >= 500){
-                zeroOneTim.start();
-                zeroOneBut.setDisable(true);
-                zeroOneAs.setDisable(true);
-                zeroOneAsBought = true;
+                oneFourTim.start();
+                oneFourBut.setDisable(true);
+                oneFourAs.setDisable(true);
+                oneFourAsBought = true;
                 updateMAH(-500);
             }
 
@@ -804,33 +818,33 @@ public class Controller{
 
     //Costs 5 mAH
     public void twoFourClick (ActionEvent action){
-        if(action.getSource().equals(zeroOneBut)){
+        if(action.getSource().equals(twoFourBut)){
             if(mAH >= 5) {
 
-                zeroOneTim.start();
+                twoFourTim.start();
             }
         }
-        else if(action.getSource().equals(zeroOneUpg)) {
+        else if(action.getSource().equals(twoFourUpg)) {
 
             if (mAH >= 5) {
 
-                if(zeroOneDelay >= 1.0)
-                    zeroOneUpg.setDisable(true);
+                if(twoFourDelay >= 1.0)
+                    twoFourUpg.setDisable(true);
                 else
-                    zeroOneDelay += 0.001;
+                    twoFourDelay += 0.001;
 
 
 
                 updateMAH(-5);
             }
         }
-        else if (action.getSource().equals(zeroOneAs)){
+        else if (action.getSource().equals(twoFourAs)){
 
             if(mAH >= 500){
-                zeroOneTim.start();
-                zeroOneBut.setDisable(true);
-                zeroOneAs.setDisable(true);
-                zeroOneAsBought = true;
+                twoFourTim.start();
+                twoFourBut.setDisable(true);
+                twoFourAs.setDisable(true);
+                twoFourAsBought = true;
                 updateMAH(-500);
             }
 
@@ -840,33 +854,33 @@ public class Controller{
 
     //Costs 5 mAH
     public void threeFourClick (ActionEvent action){
-        if(action.getSource().equals(zeroOneBut)){
+        if(action.getSource().equals(threeFourBut)){
             if(mAH >= 5) {
 
-                zeroOneTim.start();
+                threeFourTim.start();
             }
         }
-        else if(action.getSource().equals(zeroOneUpg)) {
+        else if(action.getSource().equals(threeFourUpg)) {
 
             if (mAH >= 5) {
 
-                if(zeroOneDelay >= 1.0)
-                    zeroOneUpg.setDisable(true);
+                if(threeFourDelay >= 1.0)
+                    threeFourUpg.setDisable(true);
                 else
-                    zeroOneDelay += 0.001;
+                    threeFourDelay += 0.001;
 
 
 
                 updateMAH(-5);
             }
         }
-        else if (action.getSource().equals(zeroOneAs)){
+        else if (action.getSource().equals(threeFourAs)){
 
             if(mAH >= 500){
-                zeroOneTim.start();
-                zeroOneBut.setDisable(true);
-                zeroOneAs.setDisable(true);
-                zeroOneAsBought = true;
+                threeFourTim.start();
+                threeFourBut.setDisable(true);
+                threeFourAs.setDisable(true);
+                threeFourAsBought = true;
                 updateMAH(-500);
             }
 
