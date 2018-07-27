@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64bce0b6-4dbc-4962-97e9-77f33b580a43" name="Default" comment="Decided on prices for the items and assistants.">
+    <list default="true" id="64bce0b6-4dbc-4962-97e9-77f33b580a43" name="Default" comment="Added new prices for all other items.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elec/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elec/Controller.java" afterDir="false" />
     </list>
@@ -41,54 +41,74 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="2" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="2" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="190" />
-          <entry key="txt" value="48" />
+          <entry key="java" value="325" />
+          <entry key="txt" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="190" />
-          <entry key="PLAIN_TEXT" value="48" />
+          <entry key="JAVA" value="325" />
+          <entry key="PLAIN_TEXT" value="94" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/elec/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/elec/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="968" column="30" lean-forward="true" selection-start-line="968" selection-start-column="30" selection-end-line="968" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/elec/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/elec/Controller.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="778" column="33" selection-start-line="778" selection-start-column="33" selection-end-line="778" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/elec/Controller.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="200">
+                  <caret line="352" column="36" selection-start-line="352" selection-start-column="36" selection-end-line="352" selection-end-column="36" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TesterFX</find>
       <find>fx:id</find>
       <find>energyMeter</find>
       <find>ener</find>
@@ -128,6 +147,8 @@
       <find>threeONe</find>
       <find>threeOne</find>
       <find>zeroFo</find>
+      <find>twoOn</find>
+      <find>twoOneti</find>
     </findStrings>
     <replaceStrings>
       <replace>Electricity Clicker</replace>
@@ -169,9 +190,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1905" />
-    <option name="width" value="1948" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+    <option name="width" value="1950" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -220,7 +241,7 @@
     <property name="SearchEverywhereHistoryKey" value="ant&#9;ACTION&#9;ActivateAntBuildToolWindow&#10;click&#9;PSI&#9;JAVA://elec.Controller#clicks" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532657937043" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532659571232" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/electricityclicker.properties" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -321,7 +342,7 @@
       <workItem from="1532558595626" duration="1264000" />
       <workItem from="1532559883295" duration="14689000" />
       <workItem from="1532646121989" duration="36000" />
-      <workItem from="1532646283992" duration="4937000" />
+      <workItem from="1532646283992" duration="6733000" />
     </task>
     <task id="LOCAL-00001" summary="Change package name from sample to elec.">
       <created>1532062232689</created>
@@ -477,11 +498,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532656423563</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added new prices for all other items.">
+      <created>1532657969099</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1532657969099</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86687000" />
+    <option name="totallyTimeSpent" value="88483000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,10 +521,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="779" height="830" extended-state="0" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12903225" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12879789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -505,7 +533,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32859176" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3304721" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -554,7 +582,8 @@
     <MESSAGE value="Added graph that shows mAH/s and a button to clear the data in the graph." />
     <MESSAGE value="Make clear data button -&gt; clear graph data. Recenter stuff." />
     <MESSAGE value="Decided on prices for the items and assistants." />
-    <option name="LAST_COMMIT_MESSAGE" value="Decided on prices for the items and assistants." />
+    <MESSAGE value="Added new prices for all other items." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new prices for all other items." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -645,8 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elec/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="968" column="30" lean-forward="true" selection-start-line="968" selection-start-column="30" selection-end-line="968" selection-end-column="30" />
+        <state relative-caret-position="200">
+          <caret line="352" column="36" selection-start-line="352" selection-start-column="36" selection-end-line="352" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
