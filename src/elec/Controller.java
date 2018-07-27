@@ -1,12 +1,9 @@
 package elec;
 
 import javafx.animation.AnimationTimer;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.chart.LineChart;
+import javafx.scene.chart.AreaChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -16,10 +13,13 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.util.Duration;
-import javax.swing.*;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
+
+/**
+ * Controls every aspect of the UI, the timers, the prices, and all the buttons
+ *
+ * @author Kyle Petkovic
+ * @version 1.0.0
+ */
 
 public class Controller{
     
@@ -99,7 +99,7 @@ public class Controller{
     public Button helpBtn;
 
     //Electricity production chart
-    public LineChart elecProd;
+    public AreaChart elecProd;
 
     //Clear data in graph
     public Button clearGraphData;
@@ -108,7 +108,7 @@ public class Controller{
     public Label mAHPerSec;
 
     //Keeps track of amount of energy created
-    private long mAH = 1000000000;
+    private long mAH = 0;
 
     //Keeps track of how much to add per click
     private long clickValue = 1;
@@ -117,7 +117,10 @@ public class Controller{
     private IncreaseClick inClick = new IncreaseClick((long) 100);
 
 
-
+    /**
+     * Listener that sets params for the graph, and handles the energy addition
+     *
+     */
     public void energyClick(ActionEvent action) {
         mAH+= clickValue;
         energyMeter.setText(mAH + " mAH");
@@ -135,9 +138,13 @@ public class Controller{
     }
 
 
+    //Data for the chart
     XYChart.Series elecData = new XYChart.Series();
 
-    //Timer for electricity chart
+
+    /**
+     * Timer for electricity chart, adds data and computes mAH per second
+     */
     private AnimationTimer elecChartTim = new AnimationTimer() {
         //Data for chart
 
@@ -197,7 +204,10 @@ public class Controller{
         }
     };
 
-    //Reset the data in the graph
+    /**
+     * Resets the data in the graph when the clear graph data button is clicked
+     *
+     */
     public void clearGraphDataClick (ActionEvent actionEvent){
         elecData.getData().clear();
     }
@@ -206,8 +216,13 @@ public class Controller{
 
     private double zeroOneDelay = 0.001;
 
-    //Timer, executes once a frame
-   private  AnimationTimer zeroOneTim = new AnimationTimer(){
+
+    /**
+     * Timer for the relevant set of upgrade, buy, and assistant button
+     * Keeps track of the upgrade, sets the progressbar progress, and
+     * subtracts the relevant amount of mAH from the users reserves.
+     */
+    private  AnimationTimer zeroOneTim = new AnimationTimer(){
 
         double zeroOneProgDelay;
         double zeroOneProgNum = 0;
@@ -260,8 +275,12 @@ public class Controller{
     };
 
    private double oneOneDelay = 0.001;
-   
-    //Timer, executes once a frame
+
+    /**
+     * Timer for the relevant set of upgrade, buy, and assistant button
+     * Keeps track of the upgrade, sets the progressbar progress, and
+     * subtracts the relevant amount of mAH from the users reserves.
+     */
     private  AnimationTimer oneOneTim = new AnimationTimer(){
 
         double oneOneProgDelay;
@@ -315,8 +334,12 @@ public class Controller{
     };
 
     private double twoOneDelay = 0.001;
-    
-    //Timer, executes once a frame
+
+    /**
+     * Timer for the relevant set of upgrade, buy, and assistant button
+     * Keeps track of the upgrade, sets the progressbar progress, and
+     * subtracts the relevant amount of mAH from the users reserves.
+     */
     private  AnimationTimer twoOneTim = new AnimationTimer(){
 
         double twoOneProgDelay;
@@ -370,8 +393,12 @@ public class Controller{
     };
 
     private double threeOneDelay = 0.001;
-    
-    //Timer, executes once a frame
+
+    /**
+     * Timer for the relevant set of upgrade, buy, and assistant button
+     * Keeps track of the upgrade, sets the progressbar progress, and
+     * subtracts the relevant amount of mAH from the users reserves.
+     */
     private  AnimationTimer threeOneTim = new AnimationTimer(){
 
         double threeOneProgDelay;
@@ -425,8 +452,12 @@ public class Controller{
     };
 
     private double zeroFourDelay = 0.001;
-    
-    //Timer, executes once a frame
+
+    /**
+     * Timer for the relevant set of upgrade, buy, and assistant button
+     * Keeps track of the upgrade, sets the progressbar progress, and
+     * subtracts the relevant amount of mAH from the users reserves.
+     */
     private  AnimationTimer zeroFourTim = new AnimationTimer(){
 
         double zeroFourProgDelay;
@@ -481,7 +512,11 @@ public class Controller{
     
     private double oneFourDelay = 0.001;
 
-    //Timer, executes once a frame
+    /**
+     * Timer for the relevant set of upgrade, buy, and assistant button
+     * Keeps track of the upgrade, sets the progressbar progress, and
+     * subtracts the relevant amount of mAH from the users reserves.
+     */
     private  AnimationTimer oneFourTim = new AnimationTimer(){
 
         double oneFourProgDelay;
@@ -535,8 +570,12 @@ public class Controller{
     };
 
     private double twoFourDelay = 0.001;
-    
-    //Timer, executes once a frame
+
+    /**
+     * Timer for the relevant set of upgrade, buy, and assistant button
+     * Keeps track of the upgrade, sets the progressbar progress, and
+     * subtracts the relevant amount of mAH from the users reserves.
+     */
     private  AnimationTimer twoFourTim = new AnimationTimer(){
 
         double twoFourProgDelay;
@@ -591,7 +630,11 @@ public class Controller{
     
     private double threeFourDelay = 0.001;
 
-    //Timer, executes once a frame
+    /**
+     * Timer for the relevant set of upgrade, buy, and assistant button
+     * Keeps track of the upgrade, sets the progressbar progress, and
+     * subtracts the relevant amount of mAH from the users reserves.
+     */
     private  AnimationTimer threeFourTim = new AnimationTimer(){
 
         double threeFourProgDelay;
@@ -644,7 +687,14 @@ public class Controller{
 
     };
 
-   public void shopUpgClick(ActionEvent action){
+
+    /**
+     * Keeps track of how much the click has been upgraded, updates the label for the price
+     * and increments the clickValue for every upgrade
+     *
+     * @param action In this case, the object that initiated the listener
+     */
+    public void shopUpgClick(ActionEvent action){
        if(action.getSource().equals(upgradeClick)){
            if(inClick.buyUpg(mAH)){
 
@@ -653,7 +703,6 @@ public class Controller{
 
                    updateMAH(inClick.getPrice() * -1);
                    inClick.setPrice(inClick.getPrice() * 3);
-                   System.out.println(inClick.getPrice());
 
                    //Set value of price label
                    upgradeClickPrice.setText(inClick.getPrice() + " mAH");
@@ -663,7 +712,11 @@ public class Controller{
        }
    }
 
-   //Listener to show help screen
+    /**
+     * Listener to show help screen, when the help button is clicked it creates the stage and
+     * displays it to the user along with the information on how to play.
+     *
+     */
     public void showHelpScreen (ActionEvent action){
         final Stage helpScreen = new Stage();
 
@@ -685,11 +738,24 @@ public class Controller{
 
         Scene dialogScene = new Scene(dialogVbox, 610, 115);
         helpScreen.setScene(dialogScene);
+
+        //Doesn't allow the window to be resized
         helpScreen.setResizable(false);
+
+        //Displays it to the user
         helpScreen.show();
     }
 
-    //Costs 5 mAH
+    /**
+     * Handles the purchase of it's respective item, whether or not the assistant was bought, disables button when the
+     * assistant is bought as well. Also handles the upgrading by increasing the amount added every five frames to the progressbar
+     *
+     * Cost: 5
+     * Output: 15
+     * Assistant cost: 200
+     *
+     * @param action In this case, used to check which object initiated the listener.
+     */
     public void zeroOneClick (ActionEvent action){
         if(action.getSource().equals(zeroOneBut)){
             if(mAH >= 5) {
@@ -725,7 +791,16 @@ public class Controller{
 
     }
 
-    //Costs 5 mAH
+    /**
+     * Handles the purchase of it's respective item, whether or not the assistant was bought, disables button when the
+     * assistant is bought as well. Also handles the upgrading by increasing the amount added every five frames to the progressbar
+     *
+     * Cost: 10000
+     * Output: 15000
+     * Assistant cost: 25000
+     *
+     * @param action In this case, used to check which object initiated the listener.
+     */
     public void oneOneClick (ActionEvent action){
         if(action.getSource().equals(oneOneBut)){
             if(mAH >= 10000) {
@@ -761,7 +836,16 @@ public class Controller{
 
     }
 
-    //Costs 5 mAH
+    /**
+     * Handles the purchase of it's respective item, whether or not the assistant was bought, disables button when the
+     * assistant is bought as well. Also handles the upgrading by increasing the amount added every five frames to the progressbar
+     *
+     * Cost: 650000
+     * Output: 1500000
+     * Assistant cost: 1200000
+     *
+     * @param action In this case, used to check which object initiated the listener.
+     */
     public void twoOneClick (ActionEvent action){
         if(action.getSource().equals(twoOneBut)){
             if(mAH >= 650000) {
@@ -797,10 +881,19 @@ public class Controller{
 
     }
 
-    //Costs 5 mAH
+    /**
+     * Handles the purchase of it's respective item, whether or not the assistant was bought, disables button when the
+     * assistant is bought as well. Also handles the upgrading by increasing the amount added every five frames to the progressbar
+     *
+     * Cost: 100000000
+     * Output: 250000000
+     * Assistant cost: 1500000000
+     *
+     * @param action In this case, used to check which object initiated the listener.
+     */
     public void threeOneClick (ActionEvent action){
         if(action.getSource().equals(threeOneBut)){
-            if(mAH >= 10000) {
+            if(mAH >=  100000000) {
 
                 threeOneTim.start();
             }
@@ -833,17 +926,26 @@ public class Controller{
 
     }
 
-    //Costs 5 mAH
+    /**
+     * Handles the purchase of it's respective item, whether or not the assistant was bought, disables button when the
+     * assistant is bought as well. Also handles the upgrading by increasing the amount added every five frames to the progressbar
+     *
+     * Cost: 70
+     * Output: 150
+     * Assistant cost: 500
+     *
+     * @param action In this case, used to check which object initiated the listener.
+     */
     public void zeroFourClick (ActionEvent action){
         if(action.getSource().equals(zeroFourBut)){
-            if(mAH >= 5) {
+            if(mAH >= 70) {
 
                 zeroFourTim.start();
             }
         }
         else if(action.getSource().equals(zeroFourUpg)) {
 
-            if (mAH >= 5) {
+            if (mAH >= 70) {
 
                 if(zeroFourDelay >= 1.0)
                     zeroFourUpg.setDisable(true);
@@ -852,7 +954,7 @@ public class Controller{
 
 
 
-                updateMAH(-5);
+                updateMAH(-70);
             }
         }
         else if (action.getSource().equals(zeroFourAs)){
@@ -869,7 +971,16 @@ public class Controller{
 
     }
 
-    //Costs 5 mAH
+    /**
+     * Handles the purchase of it's respective item, whether or not the assistant was bought, disables button when the
+     * assistant is bought as well. Also handles the upgrading by increasing the amount added every five frames to the progressbar
+     *
+     * Cost: 150000
+     * Output: 270000
+     * Assistant cost: 260000
+     *
+     * @param action In this case, used to check which object initiated the listener.
+     */
     public void oneFourClick (ActionEvent action){
         if(action.getSource().equals(oneFourBut)){
             if(mAH >= 150000) {
@@ -905,7 +1016,16 @@ public class Controller{
 
     }
 
-    //Costs 5 mAH
+    /**
+     * Handles the purchase of it's respective item, whether or not the assistant was bought, disables button when the
+     * assistant is bought as well. Also handles the upgrading by increasing the amount added every five frames to the progressbar
+     *
+     * Cost: 1000000
+     * Output: 6000000
+     * Assistant cost: 2500000
+     *
+     * @param action In this case, used to check which object initiated the listener.
+     */
     public void twoFourClick (ActionEvent action){
         if(action.getSource().equals(twoFourBut)){
             if(mAH >= 1000000) {
@@ -941,10 +1061,19 @@ public class Controller{
 
     }
 
-    //Costs 5 mAH
+    /**
+     * Handles the purchase of it's respective item, whether or not the assistant was bought, disables button when the
+     * assistant is bought as well. Also handles the upgrading by increasing the amount added every five frames to the progressbar
+     *
+     * Cost: 500000000
+     * Output: 750000000
+     * Assistant cost: 750000000
+     *
+     * @param action In this case, used to check which object initiated the listener.
+     */
     public void threeFourClick (ActionEvent action){
         if(action.getSource().equals(threeFourBut)){
-            if(mAH >= 5) {
+            if(mAH >= 500000000) {
 
                 threeFourTim.start();
             }
@@ -978,6 +1107,11 @@ public class Controller{
     }
 
 
+    /**
+     * Adds the passed value to the current mAH count and updates the display
+     *
+     * @param val The amount of mAH to add to the count.
+     */
     public void updateMAH(long val){
         mAH += val;
 
