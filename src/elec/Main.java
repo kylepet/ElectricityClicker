@@ -13,7 +13,21 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+/**
+ * Sets parameter for the GUI and runs it
+ *
+ * @author Kyle Petkovic
+ * @version 1.0.0
+ */
+
 public class Main extends Application {
+
+    /**
+     * Gets the fxml file and sets the parameters for it
+     *
+     * @param primaryStage The UI object
+     *
+     */
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -30,6 +44,10 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    /**
+     * Launches the ui
+     *
+     */
 
     public static void main(String[] args) {
         launch(args);
