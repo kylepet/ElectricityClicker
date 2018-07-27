@@ -379,7 +379,7 @@ public class Controller{
             if(threeOneSubtractMAH && !threeOneAsBought){
 
 
-                updateMAH(-10000);
+                updateMAH(-100000000);
 
 
                 threeOneSubtractMAH = false;
@@ -405,9 +405,9 @@ public class Controller{
 
                 //Done otherwise the mAH count will flicker
                 if(threeOneAsBought)
-                    updateMAH(5000);
+                    updateMAH(150000000);
                 else
-                    updateMAH(15000);
+                    updateMAH(250000000);
 
                 threeOneProgDelay = 0;
                 threeOneProgNum = 0;
@@ -489,7 +489,7 @@ public class Controller{
             if(oneFourSubtractMAH && !oneFourAsBought){
 
 
-                updateMAH(-5);
+                updateMAH(-150000);
 
 
                 oneFourSubtractMAH = false;
@@ -515,9 +515,9 @@ public class Controller{
 
                 //Done otherwise the mAH count will flicker
                 if(oneFourAsBought)
-                    updateMAH(10);
+                    updateMAH(127000);
                 else
-                    updateMAH(15);
+                    updateMAH(270000);
 
                 oneFourProgDelay = 0;
                 oneFourProgNum = 0;
@@ -544,7 +544,7 @@ public class Controller{
             if(twoFourSubtractMAH && !twoFourAsBought){
 
 
-                updateMAH(-5);
+                updateMAH(-1000000);
 
 
                 twoFourSubtractMAH = false;
@@ -570,9 +570,9 @@ public class Controller{
 
                 //Done otherwise the mAH count will flicker
                 if(twoFourAsBought)
-                    updateMAH(10);
+                    updateMAH(5000000);
                 else
-                    updateMAH(15);
+                    updateMAH(6000000);
 
                 twoFourProgDelay = 0;
                 twoFourProgNum = 0;
@@ -709,12 +709,12 @@ public class Controller{
         }
             else if (action.getSource().equals(zeroOneAs)){
 
-                if(mAH >= 500){
+                if(mAH >= 200){
                     zeroOneTim.start();
                     zeroOneBut.setDisable(true);
                     zeroOneAs.setDisable(true);
                     zeroOneAsBought = true;
-                    updateMAH(-500);
+                    updateMAH(-200);
                 }
 
             }
@@ -745,12 +745,12 @@ public class Controller{
         }
         else if (action.getSource().equals(oneOneAs)){
 
-            if(mAH >= 500){
+            if(mAH >= 25000){
                 oneOneTim.start();
                 oneOneBut.setDisable(true);
                 oneOneAs.setDisable(true);
                 oneOneAsBought = true;
-                updateMAH(-500);
+                updateMAH(-25000);
             }
 
         }
@@ -781,12 +781,12 @@ public class Controller{
         }
         else if (action.getSource().equals(twoOneAs)){
 
-            if(mAH >= 500){
+            if(mAH >= 1200000){
                 twoOneTim.start();
                 twoOneBut.setDisable(true);
                 twoOneAs.setDisable(true);
                 twoOneAsBought = true;
-                updateMAH(-500);
+                updateMAH(-1200000);
             }
 
         }
@@ -803,7 +803,7 @@ public class Controller{
         }
         else if(action.getSource().equals(threeOneUpg)) {
 
-            if (mAH >= 10000) {
+            if (mAH >= 100000000) {
 
                 if(threeOneDelay >= 1.0)
                     threeOneUpg.setDisable(true);
@@ -812,17 +812,17 @@ public class Controller{
 
 
 
-                updateMAH(-10000);
+                updateMAH(-100000000);
             }
         }
         else if (action.getSource().equals(threeOneAs)){
 
-            if(mAH >= 500){
+            if(mAH >= 150000000){
                 threeOneTim.start();
                 threeOneBut.setDisable(true);
                 threeOneAs.setDisable(true);
                 threeOneAsBought = true;
-                updateMAH(-500);
+                updateMAH(-150000000);
             }
 
         }
@@ -868,14 +868,14 @@ public class Controller{
     //Costs 5 mAH
     public void oneFourClick (ActionEvent action){
         if(action.getSource().equals(oneFourBut)){
-            if(mAH >= 5) {
+            if(mAH >= 150000) {
 
                 oneFourTim.start();
             }
         }
         else if(action.getSource().equals(oneFourUpg)) {
 
-            if (mAH >= 5) {
+            if (mAH >= 150000) {
 
                 if(oneFourDelay >= 1.0)
                     oneFourUpg.setDisable(true);
@@ -889,12 +889,12 @@ public class Controller{
         }
         else if (action.getSource().equals(oneFourAs)){
 
-            if(mAH >= 500){
+            if(mAH >= 260000){
                 oneFourTim.start();
                 oneFourBut.setDisable(true);
                 oneFourAs.setDisable(true);
                 oneFourAsBought = true;
-                updateMAH(-500);
+                updateMAH(-260000);
             }
 
         }
@@ -904,14 +904,14 @@ public class Controller{
     //Costs 5 mAH
     public void twoFourClick (ActionEvent action){
         if(action.getSource().equals(twoFourBut)){
-            if(mAH >= 5) {
+            if(mAH >= 1000000) {
 
                 twoFourTim.start();
             }
         }
         else if(action.getSource().equals(twoFourUpg)) {
 
-            if (mAH >= 5) {
+            if (mAH >= 1000000) {
 
                 if(twoFourDelay >= 1.0)
                     twoFourUpg.setDisable(true);
@@ -925,12 +925,12 @@ public class Controller{
         }
         else if (action.getSource().equals(twoFourAs)){
 
-            if(mAH >= 500){
+            if(mAH >= 2500000){
                 twoFourTim.start();
                 twoFourBut.setDisable(true);
                 twoFourAs.setDisable(true);
                 twoFourAsBought = true;
-                updateMAH(-500);
+                updateMAH(-2500000);
             }
 
         }
@@ -961,12 +961,12 @@ public class Controller{
         }
         else if (action.getSource().equals(threeFourAs)){
 
-            if(mAH >= 500){
+            if(mAH >= 750000000){
                 threeFourTim.start();
                 threeFourBut.setDisable(true);
                 threeFourAs.setDisable(true);
                 threeFourAsBought = true;
-                updateMAH(-500);
+                updateMAH(-750000000);
             }
 
         }
