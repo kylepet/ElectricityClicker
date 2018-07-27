@@ -33,7 +33,12 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="116.0" text="Label" GridPane.columnIndex="9" GridPane.rowIndex="2">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="364.0" text="1,200,000 mAH" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="125.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="303.0" text="2,500,000 mAH" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="2">
                <padding>
                   <Insets bottom="125.0" />
                </padding>
@@ -43,37 +48,32 @@
                   <Insets bottom="90.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="82.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="82.0" text="500 mAH" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <padding>
                   <Insets bottom="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="164.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="164.0" text="25,000 mAH" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <padding>
                   <Insets bottom="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="114.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="9" GridPane.rowIndex="2">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="303.0" text="750,000,000 mAH" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="2">
                <padding>
                   <Insets top="45.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="140.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="2">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="258.0" text="150,000,000 mAH" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.rowIndex="2">
                <padding>
                   <Insets top="45.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="108.0" text="Label" GridPane.columnIndex="7" GridPane.rowIndex="2">
-               <padding>
-                  <Insets bottom="125.0" />
-               </padding>
-            </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="82.0" text="Label" GridPane.columnIndex="10" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="82.0" text="260,000 mAH" GridPane.columnIndex="10" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <padding>
                   <Insets bottom="50.0" />
                </padding>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="1.0" prefWidth="82.0" text="500 mAH" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="1.0" prefWidth="82.0" text="200 mAH" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <padding>
                   <Insets bottom="50.0" />
                </padding>
@@ -180,42 +180,42 @@
                <opaqueInsets>
                   <Insets />
                </opaqueInsets></Button>
-            <Button fx:id="zeroOneBut" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="0.0" prefWidth="100.0" text="5 mAH" GridPane.valignment="CENTER">
+            <Button fx:id="zeroOneBut" mnemonicParsing="false" onAction="#zeroOneClick" prefHeight="0.0" prefWidth="100.0" text="5" GridPane.valignment="CENTER">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="oneOneBut" mnemonicParsing="false" onAction="#oneOneClick" prefWidth="100.0" text="10,000 mAH" GridPane.rowIndex="1">
+            <Button fx:id="oneOneBut" mnemonicParsing="false" onAction="#oneOneClick" prefWidth="100.0" text="10,000" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="twoOneBut" mnemonicParsing="false" onAction="#twoOneClick" prefWidth="100.0" text="Buy" GridPane.rowIndex="2">
+            <Button fx:id="twoOneBut" mnemonicParsing="false" onAction="#twoOneClick" prefWidth="100.0" text="650,000" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="threeOneBut" mnemonicParsing="false" onAction="#threeOneClick" prefHeight="25.0" prefWidth="85.0" text="Buy" GridPane.rowIndex="3">
+            <Button fx:id="threeOneBut" mnemonicParsing="false" onAction="#threeOneClick" prefHeight="25.0" prefWidth="85.0" text="100 Million" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="zeroFourBut" mnemonicParsing="false" onAction="#zeroFourClick" prefWidth="100.0" text="70 mAH" GridPane.columnIndex="3">
+            <Button fx:id="zeroFourBut" mnemonicParsing="false" onAction="#zeroFourClick" prefWidth="100.0" text="70" GridPane.columnIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="oneFourBut" mnemonicParsing="false" onAction="#oneFourClick" prefWidth="100.0" text="Buy" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button fx:id="oneFourBut" mnemonicParsing="false" onAction="#oneFourClick" prefWidth="100.0" text="150,000" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="twoFourBut" mnemonicParsing="false" onAction="#twoFourClick" prefWidth="100.0" text="Buy" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button fx:id="twoFourBut" mnemonicParsing="false" onAction="#twoFourClick" prefWidth="100.0" text="1,000,000" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="threeFourBut" mnemonicParsing="false" onAction="#threeFourClick" prefWidth="100.0" text="Buy" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button fx:id="threeFourBut" mnemonicParsing="false" onAction="#threeFourClick" prefWidth="100.0" text="500 Million" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="45.0" />
                </GridPane.margin>

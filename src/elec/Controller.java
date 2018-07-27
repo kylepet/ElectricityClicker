@@ -143,7 +143,7 @@ public class Controller{
         boolean firstRun = true;
 
         int frame = 1;
-        long time = 0;
+        long time = -1;
 
         long average = 0;
         int arrIndex = 0;
@@ -269,7 +269,7 @@ public class Controller{
             if(oneOneSubtractMAH && !oneOneAsBought){
 
 
-                updateMAH(-5);
+                updateMAH(-10000);
 
 
                 oneOneSubtractMAH = false;
@@ -295,9 +295,9 @@ public class Controller{
 
                 //Done otherwise the mAH count will flicker
                 if(oneOneAsBought)
-                    updateMAH(10);
+                    updateMAH(5000);
                 else
-                    updateMAH(15);
+                    updateMAH(15000);
 
                 oneOneProgDelay = 0;
                 oneOneProgNum = 0;
@@ -434,7 +434,7 @@ public class Controller{
             if(zeroFourSubtractMAH && !zeroFourAsBought){
 
 
-                updateMAH(-5);
+                updateMAH(-70);
 
 
                 zeroFourSubtractMAH = false;
@@ -460,9 +460,9 @@ public class Controller{
 
                 //Done otherwise the mAH count will flicker
                 if(zeroFourAsBought)
-                    updateMAH(10);
+                    updateMAH(80);
                 else
-                    updateMAH(15);
+                    updateMAH(150);
 
                 zeroFourProgDelay = 0;
                 zeroFourProgNum = 0;
@@ -724,14 +724,14 @@ public class Controller{
     //Costs 5 mAH
     public void oneOneClick (ActionEvent action){
         if(action.getSource().equals(oneOneBut)){
-            if(mAH >= 5) {
+            if(mAH >= 10000) {
 
                 oneOneTim.start();
             }
         }
         else if(action.getSource().equals(oneOneUpg)) {
 
-            if (mAH >= 5) {
+            if (mAH >= 10000) {
 
                 if(oneOneDelay >= 1.0)
                     oneOneUpg.setDisable(true);
