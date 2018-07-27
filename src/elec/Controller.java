@@ -128,6 +128,8 @@ public class Controller{
         elecProd.setHorizontalGridLinesVisible(false);
         elecProd.setVerticalGridLinesVisible(false);
 
+
+
         //Start updating of chart
         elecChartTim.start();
     }
@@ -172,9 +174,11 @@ public class Controller{
                 if(mAHGraph < 0)
                     mAHGraph = 0;
 
-                mAHPerSec.setText(mAHGraph + " mAH/s");
                 elecData.getData().add(new XYChart.Data(time + "", mAHGraph));
 
+
+
+                mAHPerSec.setText(mAHGraph + " mAH/s");
 
                 mAHGraph = 0;
 
